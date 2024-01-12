@@ -1,0 +1,5052 @@
+messages:
+  command_permission: "&cYou do not have permission to execute this command!"
+  join_error:
+    loading: "&cThe game is loading."
+    full: "&cThe game is already full."
+    game: "&cThe game has already started."
+    end: "&cThe game is ending."
+  join: "&a<name> &ehas joined (&b<bw-current_players>&e/&b<bw-max_players>&e)"
+  leave: "&a<name> &ehas quit!"
+  start: "&eThe game will start soon."
+  cancel: "&cWe don't have enough players! Start cancelled."
+  full: "&aThe game is full, start soon."
+  no_games_available: "&cThere are no games available."
+  game_not_exists: "&cThis game does not exist."
+  start_force_error: "&cYou cannot force the game to start."
+  start_force: "&eThe game has been forced to start by <name>"
+  start_countdown: "&eThe game starts in <time> <time_format>."
+  start_announce:
+    - <center>&a&m&l---------------------------------------------
+    - <center>&f&lBedWars
+    - ""
+    - <center>&e&lProtect your bed and destroy the enemy beds.
+    - <center>&e&lUpgrade yourself and your team by collecting
+    - <center>&e&lIron, Gold, Emerald and Diamond from generators
+    - <center>&e&lto access powerful upgrades.
+    - ""
+    - <center>&a&m&l---------------------------------------------
+  generator_upgrade: <color><name> Generators &ehave been upgraded to Tier &c<level_name>
+  bed_destroy_event: "&aAll the remaining beds were removed."
+  sudden_death_event: "&cThe dragons of the teams came out, prepare to fight."
+  final_game_event: "&cThe game has to end, every second life will be reduced."
+  cannot_place_blocks: "&cYou can't place blocks here!"
+  cannot_break_blocks: "&cYou can only break blocks placed by a player!"
+  cannot_break_your_bed: "&cYou can't break your bed!"
+  cannot_open_chest: "&cYou can't open this chest because this team was eliminated!"
+  max_build_height: "&cBuild height limit reached!"
+  blocked_command: "&cThis command cannot be used in game!"
+  respawn: "&eYou will respawn in &c<time> &e<time_format>!"
+  player_loot: <color>+<amount> <name>
+  spray_cooldown: "&cYou must wait <time> <time_format> between spray uses!"
+  dont_leave_map: "&cYou can't leave the map!"
+  team_eliminated:
+    - ""
+    - "&f&lTEAM ELIMINATED > <team_color><team_name> Team &chas been eliminated!"
+    - ""
+  use_cooldown: "&cPlease wait <time><time_format> to use that again."
+  win:
+    - <center>&a&m&l---------------------------------------------
+    - <center>&f&lBedWars
+    - ""
+    - <center>&eWinner &7- <color><winner>
+    - ""
+    - <center>&e&l1st Killer &7- <top1> &7- <number1>
+    - <center>&6&l2nd Killer &7- <top2> &7- <number2>
+    - <center>&c&l3rt Killer &7- <top3> &7- <number3>
+    - ""
+    - "&a&m&l---------------------------------------------"
+  win_none: none
+  alarm_trap_announce: "&c&lAlarm Trap set off by &7&l<name> &c&lfrom <team_color>&l<team_name>
+    &c&lteam!"
+  lang:
+    not_exist: "&cThis language does not exist."
+    selected: "&aSelected language &e<bw-lang>"
+  mobs:
+    iron_golem: <team_color><time><time_format> &l<team_name> &8[ <team_color><health> &8]
+    silverfish: <team_color>&l<team_name> <team_color>Silverfish
+  shop:
+    insufficient: "&cYou don't have enough <material>! Need <amount> more!"
+    purchase: "&aYou purchased &6<name>"
+    already_bought: "&cYou've already bought that!"
+    load: "&8» &aStore & Hotbar loading completed."
+    load_error: "&8» &cYour store could not be loaded correctly."
+    load_cooldown: "&8» &cYou must wait <time> <time_format> to make status again."
+  upgrade:
+    insufficient: "&cYou don't have enough resources to unlock that upgrade!"
+    purchase: "&a<player> purchased &6<name>"
+    already_bought: "&cYou already unlocked this upgrade!"
+    max_traps: "&cTrap queue full!"
+  team_selector:
+    already: "&cYou are already on this team"
+    full: "&cThis team is already full!"
+    join: "&a<name> has joined the team."
+  holograms:
+    generator:
+      - "&eTier &c<level_name>"
+      - <team_color>&l<name>
+      - "&eSpawns in &c<time> &e<time_format>"
+    shop:
+      - <team_color>ITEM SHOP
+      - "&e&lRIGHT CLICK"
+    upgrades:
+      - <team_color>UPGRADES
+      - "&e&lRIGHT CLICK"
+  tab_prefix:
+    white: "&f&lW &f"
+    orange: "&6&lO &6"
+    yellow: "&e&lY &e"
+    red: "&4&lR &4"
+    pink: "&d&lP &d"
+    purple: "&5&lP &5"
+    green: "&a&lG &a"
+    dark_green: "&2&lDG &2"
+    aqua: "&b&lA &b"
+    cyan: "&3&lC &3"
+    blue: "&9&lB &9"
+    black: "&0&lB &0"
+    gray: "&7&lG &7"
+    dark_gray: "&8&lDG &8"
+    spectator: "&7&lS &7&o"
+  team_name:
+    white: White
+    orange: Orange
+    yellow: Yellow
+    red: Red
+    pink: Pink
+    purple: Purple
+    green: Green
+    dark_green: Dark Green
+    aqua: Aqua
+    cyan: Cyan
+    blue: Blue
+    black: Black
+    gray: Gray
+    dark_gray: Dark Gray
+  materials:
+    iron_ingot:
+      singular: Iron
+      plural: Iron
+      color: "&f"
+    gold_ingot:
+      singular: Gold
+      plural: Gold
+      color: "&6"
+    diamond:
+      singular: Diamond
+      plural: Diamonds
+      color: "&b"
+    emerald:
+      singular: Emerald
+      plural: Emeralds
+      color: "&2"
+    coal:
+      singular: Coal
+      plural: Coal
+      color: "&0"
+  help:
+    - ""
+    - <center>&6&lBedWars &7v.<bw-version>
+    - ""
+    - " &7· &a/join &7- &fTo enter an arena."
+    - " &7· &a/lang &7- &fTo change the language."
+    - " &7· &a/points &7- &fTo view your points."
+    - ""
+  cosmetics:
+    permission: "&cYou do not have permission for this cosmetic."
+    not_enough_money: "&cYou don't have enough coins to buy that!"
+    purchased: "&6You purchased &a<cosmetic>&6!"
+    already_selected: "&cYou have already selected this cosmetic."
+    selected: "&6You selected &a<cosmetic>&6!"
+    unselected: "&aYou have removed this cosmetic."
+  votes:
+    permission: "&cYou do not have permission to vote."
+    already_voted: "&cYou have already voted!"
+    vote_shop: "&e<name> &fhas voted for the shop and &6<vote> &fupgrades!"
+    vote_health: "&e<name> &fvoted for the &6<vote> &flife!"
+    vote_time: "&e<name> &fvoted for &6<vote> &ftime!"
+    announce:
+      shop: "&eThe &6<name> &eshop has been selected with &6<votes> &evotes."
+      health: "&eThe &6<name> &elife has been selected with &6<votes> &evotes."
+      time: "&eThe &6<name> &etime has been selected with &6<votes> &evotes."
+  progress_bar:
+    symbol: ■
+    progress_color: "&b"
+    left_color: "&7"
+    max: "&cMax"
+    finish: "&8[ <progress> &8]"
+  groups:
+    solo: Solo
+    doubles: Doubles
+    trios: Trios
+    quartets: Quartets
+    1vs1: 1vs1
+  leaderboard:
+    line: "&e<position>. &f<name> &7- &e<amount>"
+    empty: "&cThis leaderboard is empty."
+  points:
+    see: "&aYour Points: &f<bw-points>"
+    online: "&cThe player is not online."
+    integer: "&cYou need to enter a valid amount."
+    sender:
+      add: "&aYou have added <points> points to <name>."
+      remove: "&cYou took <points> points from <name>."
+    target:
+      add: "&aThey have given you <points> points."
+      remove: "&cThey have taken <points> points from you."
+  compass_tracker:
+    not_all_beds_destroyed: "&cNot all enemy beds are destroyed yet!"
+    not_enough_resources: "&cYou don't have enough resources!"
+    already_tracking: "&cYou are already tracking this team!"
+    purchase: "&cYou will lose the ability to track this team when you die!"
+  quick_communications:
+    format: "&a&lTEAM > &7<name>&f: &a<message>"
+    hello: Hello ( ﾟ◡ﾟ)/!
+    im_coming: I'm coming back to base!
+    im_defending: I'm defending!
+    im_attacking: I'm attacking <team>
+    im_collecting: I'm collecting <resource>
+    i_have_resources: I have <resource>
+    thanks_you: Thank You
+    get_back: Get back to base
+    please_defend: Please defend!
+    lets_attack: Let's attack <team>
+    we_need_resources: We need <resource>
+    player_incoming: Player incoming!
+  announcement:
+    rejoin: "&c&lIf you get disconnected use /rejoin to join back in the game."
+    cross_teaming: "&c&lCross-teaming is not allowed! Report cross-teamers using /report."
+  rejoin:
+    no_arena: "&cThere is no arena to rejoin!"
+    denied: "&cYou can't rejoin the arena anymore. Game ended or bed destroyed."
+    allowed: "&eJoining arena &a<arena>&e!"
+    reconnected: "&7<name> &ehas reconnected!"
+  cannot_use_chat:
+    - "&6&m-----------------------------------"
+    - "&cYou cannot say the same message twice!"
+    - "&6&m-----------------------------------"
+  map_selection:
+    no_arena: "&cThere are no arenas available."
+    no_favourite: "&cYou have no favorite games available."
+    daily_limit_exceeded:
+      - "&cYou have used all your daily free map selections!"
+      - "&cTo unlock unlimited map selection uses you can purchase &bMVP&c+ at &ehttps://store.minecraft.net"
+  party:
+    help:
+      - ""
+      - "&aParty Commands:"
+      - " &e/party help &b- Prints this help message"
+      - " &e/party invite <player> &b- Invites the player to your party"
+      - " &e/party leave &b- Leaves the current party"
+      - " &e/party promote <player> &b- Promote the player to the party leader"
+      - " &e/party remove <player> &b- Remove the player from the party"
+      - " &e/party accept <player> &b- Accept a party invite from the player"
+      - " &e/party disband &b- Disbands the party"
+      - " &e/party open &b- Open your party to the public"
+      - " &e/party join <player> &b- Join a public party"
+      - " &e/party announce &b- Announce your public party"
+      - " &e/party chat <message> &b- Send a message to your parties"
+      - ""
+    no_online: "&cThe player is not connected!"
+    only_leader: "&cYou must be the leader to perform this action."
+    created: "&aYou have created a party!"
+    not_in_party: "&cYou are not at a party!"
+    already_party: "&cYou are already in a party."
+    invite:
+      sender: "&aYou have invited <name>!"
+      invited: "&aYou have been invited to <name>'s party, you have 60 seconds to
+        accept!"
+      no_invitation: "&cYou have no invitation from this player!"
+      expired: "&cThe party invitation has already expired!"
+      already: "&cYou have already invited this player!"
+      join: "&a<name> has joined the party!"
+    leave: "&c<name> has left the party!"
+    promote:
+      no_in_your_party: "&cThis player must be in your party!"
+      sender: "&aNow <name> is the leader!"
+      promoted: "&aNow you are the leader of the party!"
+    remove:
+      sender: "&aYou got <name> out of the party!"
+      removed: "&cYou have been taken out of the party :("
+    disband: "&cThe party has been disbanded!"
+    public:
+      permission: "&cYou do not have permission to make a public party!"
+      open:
+        - ""
+        - <center>&6&l<name> PARTY´s
+        - <center>&a&lCLICK TO JOIN
+        - ""
+      close: "&cThe party is no longer public."
+      cooldown: "&cYou have to wait <time> <time_format> to use this command again."
+      not_have_party: "&cThis player has no party."
+      not_have_public: "&cThe player does not have a public party!"
+    list:
+      see: "&fMembers &7(<total>)&f: &b<members>"
+      leader: " &c(Leader)&b"
+    chat: "&bParty Chat | &f<name>: &7<message>"
+    announce:
+      cooldown: "&cWait <time> <time_format> to re-advertise your public party!"
+      see:
+        - ""
+        - <center>&6&lJoin <name>'s party!
+        - <center>&a&lCLICK TO JOIN
+        - ""
+    cooldown: "&cWait <time> <time_format> to re-advertise your public party!"
+    see:
+      - ""
+      - <center>&6&lJoin <name>'s party!
+      - <center>&a&lCLICK TO JOIN
+      - ""
+  tnt_boost:
+    no_arena: "&cThis command must be used in the game!"
+    only_double: "&cYou must use an integer or decimal value!"
+    not_zero: "&cThe value must be greater than 0!"
+    multiplied: "&aTNT value multiplied to <value>!"
+  bungeemode:
+    connecting: "&aYou are being connected to the server..."
+    no_data: "&cThere is no data on you!"
+    no_arena: "&cThe server is not available!"
+  cosmetics_command:
+    no_online: "&cThis player is not online!"
+    add:
+      sender: "&aYou have added cosmetic <cosmetic> to player <name>"
+      receiver: "&aYou have been given the cosmetic &l<cosmetic>"
+    remove:
+      sender: "&aRemoved cosmetic <cosmetic> from player <name>"
+      receiver: "&cYour cosmetic has been removed &l<cosmetic>"
+  spect_command:
+    no_arena: "&cThis arena does not exist!"
+    no_game: "&cThe game is not running!"
+    join: "&aYou have joined the game as a spectator!"
+
+actionbar:
+  target_first_person: "&fTarget: &a&l<name>   &aLEFT CLICK for menu   &cSNEAK to
+    exit"
+  target_default: "&fTarget: &a&l<name>  &fDistance &a&l<distance>m"
+  tracking: "&fTracking: <team_color>&l<team_name> &f- Distance: &a&l<distance>m"
+
+titles:
+  join:
+    title: "&6&lBedWars"
+    subtitle: "&e<bw-mode>"
+  respawn:
+    title: "&cYOU DIED!"
+    subtitle: "&eYou will respawn in &c<time> &e<time_format>!"
+  starting:
+    title: "&eStarting in"
+    subtitle: "&6<time> &e<time_format>"
+  bed_destroyed:
+    title: "&c&lBED DESTROYED!"
+    subtitle: ""
+  alarm:
+    title: "&c&lALARM!"
+    subtitle: "&fAlarm trap set of by <team_color>&l<team_name> &fteam!"
+  first_person:
+    title: "&aSpectating &6<name>"
+    subtitle: "&aLEFT CLICK for menu  &cSNEAK to exit"
+  exit_first_person:
+    title: "&eExiting Spectator Mode"
+    subtitle: " "
+
+votes:
+  shop:
+    basic: Basic
+    default: Normal
+    overpowered: Overpowered
+  health:
+    hardcore: Hardcore
+    default: Normal
+    double: Double
+  time:
+    day: Day
+    sunset: Sunset
+    night: Night
+
+cosmetics:
+  trails:
+    hearts: Hearts
+    flame: Flame
+    water_splash: Water Splash
+    drip_lava: Drip Lava
+    redstone: Redstone
+    note: Notes
+    none: None
+  windances:
+    anvil_rain: Anvil Rain
+    fireworks: Fireworks
+    cold_snap: Cold Snap
+    yee_haw: Yee Haw
+    meteors: Meteors
+    night_shift: Night Shift
+    wither: Wither
+    gravity: Gravity
+    dragon: Dragon
+    floating_lanterns: Floating Lanterns
+    pig_rain: Pig Rain
+    war_sheep: War Sheep
+    vulcan: Vulcan
+    vulcan_wool: Vulcan Wool
+    sheeps: Sheeps
+    fly_carpet: Fly Carpet
+    none: None
+  killeffects:
+    love: Love
+    tnt: TNT
+    egg_explosion: Egg Explosion
+    final_smash: Final Smash
+    head_rocket: Head Rocket
+    cookie_fountain: Cookie Fountain
+    blood: Blood
+    ghost: Ghost
+    creeper: Creeper
+    diamond: Diamond
+    dyes: Dyes
+    flowers: Flowers
+    rain: Rain
+    bunny_explosion: Bunny Explosion
+    none: None
+  sprays:
+    bed: Bed
+    tnt: TNT
+    water_bucket: Water Bucket
+    none: None
+  cries:
+    bat: Bat
+    skeleton: Skeleton
+    wolf: Wolf
+    enderdragon: Dragon Roar
+    burp: Burp
+    enderman: Enderman
+    firework: Firework
+    none: None
+  shopkeepers:
+    adventure_time: Adventure Time
+    amongus: Among Us
+    astronaut: Astronaut
+    axolotl: Axolotl
+    covid: Covid 19
+    alien: Alien
+    pokemon: Pokemon
+    naruto: Naruto
+    police: Police
+    dragonball: Dragon Ball
+    lgbt: LGBT
+  killmessages:
+    default:
+      name: Default
+      default:
+        killer: " by <color><name>"
+        default: <color><name> &fdied
+        disconnect: <color><name> &fhas disconnected from the game
+        final_kill: " &b&lFINAL KILL"
+        final_kill_top: " &ffinal &e#<position> &7(<amount>)&f."
+        bed_destroyed_top:
+          - ""
+          - "&f&lBED DESTRUCTION > <bed_color><bed_team_name> Bed &7was bed &e#<position>
+          &7(<amount>) destroyed by <team_color><name>&7!"
+          - ""
+        bed_destroyed_you:
+          - ""
+          - "&f&lBED DESTRUCTION > &7You bed was destroyed by <team_color><name>"
+          - ""
+        bed_destroyed_everyone:
+          - ""
+          - "&f&lBED DESTRUCTION > <bed_color><bed_team_name> Bed &cwas destroyed by
+          <team_color><name>"
+          - ""
+      messages:
+        contact: <color><name> &fhas been punctured to death
+        entity_attack: <color><name> &fwas killed
+        projectile: <color><name> &fwas shot
+        fall: <color><name> &ffell from a high place
+        fire: <color><name> &fwent up in flames
+        fire_tick: <color><name> &fburned to death
+        block_explosion: <color><name> &fwas blown up
+        entity_explosion: <color><name> &fwas blown up
+        void: <color><name> &ffell out of the world
+        falling_block: <color><name> &fwas squashed
+        custom: <color><name> &fdied in a unique way
+      entity:
+        iron_golem: " by <color><name>'s &7Iron Golem!"
+        silverfish: " by <color><name>'s &7Silverfish!"
+    dramatic:
+      name: Dramatic
+      default:
+        killer: " by <color><name>"
+        default: <color><name> &fdied
+        disconnect: <color><name> &fhas disconnected from the game
+        final_kill: " &b&lFINAL KILL"
+        final_kill_top: " &ffinal &e#<position> &7(<amount>)&f."
+        bed_destroyed_top:
+          - ""
+          - "&f&lBED DESTRUCTION > <bed_color><bed_team_name> Bed &7was bed &e#<position>
+          &7(<amount>) destroyed by <team_color><name>&7!"
+          - ""
+        bed_destroyed_you:
+          - ""
+          - "&f&lBED DESTRUCTION > &7Your bed was massacred by <team_color><name>"
+          - ""
+        bed_destroyed_everyone:
+          - ""
+          - "&f&lBED DESTRUCTION > <bed_color><bed_team_name> Bed &chas been brutally
+          destroyed by <team_color><name>"
+          - ""
+      messages:
+        contact: <color><name> &fbegged for so much blow
+        entity_attack: <color><name> &fhe was brutally murdered
+        projectile: <color><name> &fthey have given him a super head shoot
+        fall: <color><name> &ffell from too high a place
+        fire: <color><name> &fwas burned to ashes
+        fire_tick: <color><name> &fhe was brutally burned alive
+        block_explosion: <color><name> &fwas torn to pieces by the air
+        entity_explosion: <color><name> &fwas torn to pieces by the air
+        void: <color><name> &ffell into the void of his kisses
+        falling_block: <color><name> &fwas brutally crushed
+        custom: <color><name> &fdeath in a unique and bastard way
+      entity:
+        iron_golem: " by <color><name>'s &7Iron Golem!"
+        silverfish: " by <color><name>'s &7Silverfish!"
+  glyphs:
+    diamond: Diamond
+    emerald: Emerald
+    gold: Gold
+    urss: URSS
+    none: None
+  beddestroys:
+    squid_missile: Squid Missile
+    firework: Firework
+    lightning_strike: Lightning Strike
+    lava_explosion: Lava Explosion
+    pig_missile: Pig Missile
+    tornado: Tornado
+    thief: Thief
+    egg_explosion: Egg Explosion
+    blizzard: Blizzard
+    pig_explosion: Pig Explosion
+    lady_bug: Lady Bug
+    fire_dance: Fire Dance
+    none: None
+  woodskins:
+    spruce_plank: Spruce Plank
+    birch_plank: Birch Plank
+    jungle_plank: Jungle Plank
+    acacia_plank: Acacia Plank
+    dark_oak_plank: Dark Oak Plank
+    oak_log: Oak Log
+    spruce_log: Spruce Log
+    birch_log: Birch Log
+    jungle_log: Jungle Log
+    acacia_log: Acacia Log
+    dark_oak_log: Dark Oak Log
+    none: None
+  toppers:
+    bunny: Bunny
+    chicken: Chicken
+    sheep: Sheep
+    slime: Slime
+    sword: Sword
+    sheep_rainbow: Sheep Rainbow
+    none: None
+
+items:
+  servers:
+    name: "&9Example &7(Right Click)"
+    lore:
+      - "&7Item Example."
+  cosmetics:
+    name: "&aBedWars Cosmetics &7(Right Click)"
+    lore:
+      - "&7Your cosmetics"
+  random:
+    name: "&eRandom Game &7(Right Click)"
+    lore:
+      - "&7Join a random game."
+  team_selector:
+    name: "&aTeam Selector &7(Right Click)"
+    lore:
+      - "&7Select your team"
+  votes:
+    name: "&aVotes &7(Right Click)"
+    lore:
+      - "&7Vote modes."
+  teleport_spectator:
+    name: "&a&lTeleporter &7(Right Click)"
+    lore:
+      - "&7Open teleporter menu."
+  options_spectator:
+    name: "&b&lSpectator Settings &7(Right Click)"
+    lore:
+      - "&7Open settings menu."
+  play_again:
+    name: "&b&lPlay Again &7(Right Click)"
+    lore:
+      - "&7Play Again."
+  leave:
+    name: "&c&lReturn to Lobby &7(Right Click)"
+    lore:
+      - "&7Leave game."
+  tracker_shop:
+    name: "&aCompass &7(Right Click)"
+    lore: []
+
+holograms:
+  soloWins:
+    - "&b&lLifetime Wins"
+    - "&7BedWars • Solo"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&a&lLifetime &7Monthly &7Weekly &7Daily"
+  soloWinsMonthly:
+    - "&b&lMonthly Wins"
+    - "&7BedWars • Solo"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &a&lMonthly &7Weekly &7Daily"
+  soloWinsWeekly:
+    - "&b&lWeekly Wins"
+    - "&7BedWars • Solo"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &a&lWeekly &7Daily"
+  soloWinsDaily:
+    - "&b&lDaily Wins"
+    - "&7BedWars • Solo"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &7Weekly &a&lDaily"
+  soloFinalKills:
+    - "&b&lLifetime Final Kills"
+    - "&7BedWars • Solo"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&a&lLifetime &7Monthly &7Weekly &7Daily"
+  soloFinalKillsMonthly:
+    - "&b&lMonthly Final Kills"
+    - "&7BedWars • Solo"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &a&lMonthly &7Weekly &7Daily"
+  soloFinalKillsWeekly:
+    - "&b&lWeekly Final Kills"
+    - "&7BedWars • Solo"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &a&lWeekly &7Daily"
+  soloFinalKillsDaily:
+    - "&b&lDaily Final Kills"
+    - "&7BedWars • Solo"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &7Weekly &a&lDaily"
+  totalWins:
+    - "&b&lLifetime Wins"
+    - "&7All Modes"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&a&lLifetime &7Monthly &7Weekly &7Daily"
+  totalWinsMonthly:
+    - "&b&lMonthly Wins"
+    - "&7All Modes"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &a&lMonthly &7Weekly &7Daily"
+  totalWinsWeekly:
+    - "&b&lWeekly Wins"
+    - "&7All Modes"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &a&lWeekly &7Daily"
+  totalWinsDaily:
+    - "&b&lDaily Wins"
+    - "&7All Modes"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &7Weekly &a&lDaily"
+  totalFinalKills:
+    - "&b&lLifetime Final Kills"
+    - "&7All Modes"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&a&lLifetime &7Monthly &7Weekly &7Daily"
+  totalFinalKillsMonthly:
+    - "&b&lMonthly Final Kills"
+    - "&7All Modes"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &a&lMonthly &7Weekly &7Daily"
+  totalFinalKillsWeekly:
+    - "&b&lWeekly Final Kills"
+    - "&7All Modes"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &a&lWeekly &7Daily"
+  totalFinalKillsDaily:
+    - "&b&lDaily Final Kills"
+    - "&7All Modes"
+    - ""
+    - <leaderboard>
+    - ""
+    - "&6&lChange to toggle!"
+    - "&7Lifetime &7Monthly &7Weekly &a&lDaily"
+
+menus:
+  replacement:
+    cosmetics:
+      permission: "&cYou do not have permission!"
+      purchase: "&eClick to purchase!"
+      selected: "&aSELECTED!"
+      select: "&eClick to select!"
+      need: "&cYou don't have enough money."
+      price:
+        - ""
+        - "&7Cost: &6<cost>"
+    votes:
+      permission: "&cYou do not have permission to vote"
+      already_voted: "&cYou have already voted."
+      vote: "&eClick to vote!"
+    team:
+      full: "&cThis team is already full!"
+      already: "&cYou are already in this team!"
+      join: "&eClick to join the team!"
+      member: " &7- &f<name>"
+      empty: "&cThe team is empty!"
+    spectator:
+      auto_teleport:
+        enabled:
+          name: "&cDisable Auto Teleport"
+          lore:
+            - "&7Click to disable auto teleport!"
+        disabled:
+          name: "&aEnable Auto Teleport"
+          lore:
+            - "&7Click to enable auto teleport!"
+      night_vision:
+        enabled:
+          name: "&cDisable Night Vision"
+          lore:
+            - "&7Click to disable night vision!"
+        disabled:
+          name: "&aEnable Night Vision"
+          lore:
+            - "&7Click to enable night vision!"
+      first_person:
+        enabled:
+          name: "&cDisable First Person"
+          lore:
+            - "&7Click to disable first"
+            - "&7person spectating when using"
+            - "&7the compass!"
+            - "&7You can also right-click a"
+            - "&7player to spectate them in"
+            - "&7first person."
+        disabled:
+          name: "&aEnable First Person"
+          lore:
+            - "&7Click to enable first person"
+            - "&7spectating when using the"
+            - "&7the compass!"
+            - "&7You can also right-click a"
+            - "&7player to spectate them in"
+            - "&7first person."
+      show_spectator:
+        enabled:
+          name: "&cHide Spectators"
+          lore:
+            - "&7Click to hide other spectators!"
+        disabled:
+          name: "&aShow Spectators"
+          lore:
+            - "&7Click to show other spectators!"
+    track_shop:
+      price:
+        - ""
+        - "&7Cost: <color><amount> <material>"
+      status:
+        already_purchased: "&eYou already have it bought!"
+        not_enough: "&cYou don't have enough resource!"
+        locked: "&cUnlocks when all enemy beds are destroyed!"
+        purchase: "&eClick to purchase!"
+    map_selection:
+      favorite: "&b✫ "
+      status:
+        available_animation1: "&a► Click to Play"
+        available_animation2: "&a Click to Play"
+        un_available_animation1: "&c► Daily limit exceeded!"
+        un_available_animation2: "&c Daily limit exceeded!"
+      color:
+        available: "&a"
+        un_available: "&c"
+  cosmetics:
+    title: Cosmetics
+    icons:
+      '9':
+        name: "&aProjectile Trails"
+        lore:
+          - "&7Change your projectile particle"
+          - "&7trail effect."
+          - ""
+          - "&7Unlocked &a<bw-projectiles_purchased>/<bw-projectiles_total> &8(<bw-projectiles_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-projectiles_selected>"
+          - ""
+          - "&eClick to view!"
+      '11':
+        name: "&aVictory Dances"
+        lore:
+          - "&7Celebrate by gloating and"
+          - "&7showing off to other players"
+          - "&7whenever you win!"
+          - ""
+          - "&7Unlocked &a<bw-windances_purchased>/<bw-windances_total> &8(<bw-windances_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-windances_selected>"
+          - ""
+          - "&eClick to view!"
+      '13':
+        name: "&aFinal Kill Effects"
+        lore:
+          - "&7A selection of various effects"
+          - "&7to choose from that will trigger"
+          - "&7whenever you final kill an"
+          - "&7enemy."
+          - ""
+          - "&7Unlocked &a<bw-killeffects_purchased>/<bw-killeffects_total> &8(<bw-killeffects_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-killeffects_selected>"
+          - ""
+          - "&eClick to view!"
+      '15':
+        name: "&aSprays"
+        lore:
+          - "&7Select a spray to show off all"
+          - "&7over the place! spray slots can"
+          - "&7be found on every spawn island"
+          - "&7and some center islands."
+          - ""
+          - "&7Unlocked &a<bw-sprays_purchased>/<bw-sprays_total> &8(<bw-sprays_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-sprays_selected>"
+          - ""
+          - "&eClick to view!"
+      '17':
+        name: "&aIsland Toppers"
+        lore:
+          - "&7Select an Island Topper to"
+          - "&7decorate your island with! In"
+          - "&7Doubles and Teams Modes a random"
+          - "&7player´s choice from each team"
+          - "&7is chosen."
+          - ""
+          - "&7Unlocked &a<bw-toppers_purchased>/<bw-toppers_total> &8(<bw-toppers_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-toppers_selected>"
+          - ""
+          - "&eClick to view!"
+      '22':
+        name: "&aDeath Cries"
+        lore:
+          - "&7Let others know just how salty"
+          - "&7yours tears are every time you"
+          - "&7die with these death cries."
+          - ""
+          - "&7Unlocked &a<bw-deathcries_purchased>/<bw-deathcries_total> &8(<bw-deathcries_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-deathcries_selected>"
+          - ""
+          - "&eClick to view!"
+      '27':
+        name: "&aShopkeeper Skins"
+        lore:
+          - "&7Select from various Shopkeeper"
+          - "&7skins, which will replace how"
+          - "&7the shopkeeper look in-game!"
+          - ""
+          - "&7Unlocked &a<bw-shopkeepers_purchased>/<bw-shopkeepers_total> &8(<bw-shopkeepers_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-shopkeepers_selected>"
+          - ""
+          - "&eClick to view!"
+      '29':
+        name: "&aKill Messages"
+        lore:
+          - "&7Select a Kill Message package to"
+          - "&7replace chat messages when you"
+          - "&7kill players, Team and breaks"
+          - "&7Beds!"
+          - ""
+          - "&7Unlocked &a<bw-killmessages_purchased>/<bw-killmessages_total> &8(<bw-killmessages_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-killmessages_selected>"
+          - ""
+          - "&eClick to view!"
+      '31':
+        name: "&aGlyphs"
+        lore:
+          - "&7Select a Glyph image which will"
+          - "&7appear when picking up diamonds"
+          - "&7and emeralds!"
+          - "&7Beds!"
+          - ""
+          - "&7Unlocked &a<bw-glyphs_purchased>/<bw-glyphs_total> &8(<bw-glyphs_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-glyphs_selected>"
+          - ""
+          - "&eClick to view!"
+      '33':
+        name: "&aBed Destroys"
+        lore:
+          - "&7Select from various Bed Destroy"
+          - "&7effects, which occur when"
+          - "&7you break a bed!"
+          - ""
+          - "&7Unlocked &a<bw-beddestroys_purchased>/<bw-beddestroys_total> &8(<bw-beddestroys_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-beddestroys_selected>"
+          - ""
+          - "&eClick to view!"
+      '35':
+        name: "&aWood Skins"
+        lore:
+          - "&7Change the Skin of Wood in game."
+          - ""
+          - "&7Unlocked &a<bw-woodskins_purchased>/<bw-woodskins_total> &8(<bw-woodskins_percent>%)"
+          - "&7Currently Selected"
+          - "&a<bw-woodskins_selected>"
+          - ""
+          - "&eClick to view!"
+      '48':
+        name: "&cClose"
+        lore:
+          - "&7Close BedWars Shop"
+      '50':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  trails:
+    title: Trails
+    icons:
+      '10':
+        name: "&aNone"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Selecting this option disables"
+          - "&7your projectile trail."
+          - ""
+          - <select_status>
+      '11':
+        name: "&aHearts"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Heart projectile"
+          - "&7trail."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aFlame"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Flame projectile"
+          - "&7trail."
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aWater"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Water projectile"
+          - "&7trail."
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aLava"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Lava projectile"
+          - "&7trail."
+          - <price_status>
+          - ""
+          - <select_status>
+      '15':
+        name: "&aRedstone"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Redstone projectile"
+          - "&7trail."
+          - <price_status>
+          - ""
+          - <select_status>
+      '16':
+        name: "&aNotes"
+        lore:
+          - "&7Projectile Trail"
+          - ""
+          - "&7Select the Notes projectile"
+          - "&7trail."
+          - <price_status>
+          - ""
+          - <select_status>
+      '30':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '32':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  windances:
+    title: Win Dances
+    icons:
+      '10':
+        name: "&aNone"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Selecting this option disables"
+          - "&7your win dances."
+          - ""
+          - <select_status>
+      '11':
+        name: "&aAnvil Rain"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Anvils will rain from the sky."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aFireworks"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Celebrate with a splendid show"
+          - "&7fireworks show!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aCold Snap"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Chill an area around you to"
+          - "&7absolute zero."
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aYeehaw"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Ride a horse like it´s 1876."
+          - <price_status>
+          - ""
+          - <select_status>
+      '15':
+        name: "&aMeteor Shower"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7A meteor shower will rain down"
+          - "&7from the sky."
+          - <price_status>
+          - ""
+          - <select_status>
+      '16':
+        name: "&aNight Shift"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Set it to day, set it to night,"
+          - "&7repeat, like a god."
+          - <price_status>
+          - ""
+          - <select_status>
+      '19':
+        name: "&aWither Rider"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Ride a Wither straight from the"
+          - "&7nether."
+          - <price_status>
+          - ""
+          - <select_status>
+      '20':
+        name: "&aGravity"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7In an area around you the blocks"
+          - "&7will fly out."
+          - <price_status>
+          - ""
+          - <select_status>
+      '21':
+        name: "&aDragon Rider"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Ride a Dragon capable of"
+          - "&7destroying the map."
+          - <price_status>
+          - ""
+          - <select_status>
+      '22':
+        name: "&aFloating Lanterns"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Spawn floating lanterns to"
+          - "&7brighten up the night."
+          - <price_status>
+          - ""
+          - <select_status>
+      '23':
+        name: "&aRaining Pigs"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7The sky will rain with pigs."
+          - <price_status>
+          - ""
+          - <select_status>
+      '24':
+        name: "&aWar Sheep"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Ride on a colorful sheep who"
+          - "&7changes its colors."
+          - <price_status>
+          - ""
+          - <select_status>
+      '25':
+        name: "&aVulcan"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7You will become a living volcano."
+          - <price_status>
+          - ""
+          - <select_status>
+      '28':
+        name: "&aVulcan Wool"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7You will become a volcano of"
+          - "&7tenderness."
+          - <price_status>
+          - ""
+          - <select_status>
+      '29':
+        name: "&aSheeps"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7Colored &aS&3h&ee&de&9p&bs &7will come out."
+          - <price_status>
+          - ""
+          - <select_status>
+      '30':
+        name: "&aFly Carpet"
+        lore:
+          - "&8Victory Dance"
+          - ""
+          - "&7You will fly on a flying carpet."
+          - <price_status>
+          - ""
+          - <select_status>
+      '48':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '50':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  killeffects:
+    title: Final Kill Effects
+    icons:
+      '10':
+        name: "&aNone"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Selecting this option disables"
+          - "&7your Final Kill Effect."
+          - ""
+          - <select_status>
+      '11':
+        name: "&aLove"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will spawn lots"
+          - "&7of love."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aTNT"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7disappear into TNT."
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aEgg Explosion"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7drop egg explosions."
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aFinal Smash"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will smash him"
+          - "&7out of the world."
+          - <price_status>
+          - ""
+          - <select_status>
+      '15':
+        name: "&aHead Rocket"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will launch"
+          - "&7their head up in the skies."
+          - <price_status>
+          - ""
+          - <select_status>
+      '16':
+        name: "&aCookie Fountain"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will let"
+          - "&7cookies sprinkle out of you."
+          - <price_status>
+          - ""
+          - <select_status>
+      '19':
+        name: "&aBlood"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7explode in blood."
+          - <price_status>
+          - ""
+          - <select_status>
+      '20':
+        name: "&aGhost"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will his ghost"
+          - "&7appears."
+          - <price_status>
+          - ""
+          - <select_status>
+      '21':
+        name: "&aCreeper"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7An electrified creeper will appear."
+          - <price_status>
+          - ""
+          - <select_status>
+      '22':
+        name: "&aDiamond"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7explode diamonds."
+          - <price_status>
+          - ""
+          - <select_status>
+      '23':
+        name: "&aDyes"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will make them"
+          - "&7explode dyes."
+          - <price_status>
+          - ""
+          - <select_status>
+      '24':
+        name: "&aFlowers"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Killing an enemy will make flowers."
+          - <price_status>
+          - ""
+          - <select_status>
+      '25':
+        name: "&aRain"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7An uncontrollable rain will fall."
+          - <price_status>
+          - ""
+          - <select_status>
+      '28':
+        name: "&aBunny Explosion"
+        lore:
+          - "&8Final Kill Effect"
+          - ""
+          - "&7Flying rabbits will come out and explode."
+          - <price_status>
+          - ""
+          - <select_status>
+      '48':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '50':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  sprays:
+    title: Sprays
+    icons:
+      '10':
+        name: "&aNone"
+        lore:
+          - "&8Spray"
+          - ""
+          - "&7Selecting this option disables"
+          - "&7your spray."
+          - <price_status>
+          - ""
+          - <select_status>
+      '11':
+        name: "&aBed"
+        lore:
+          - "&8Spray"
+          - ""
+          - "&7Select Bed Spray."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aTNT"
+        lore:
+          - "&8Spray"
+          - ""
+          - "&7Select TNT Spray."
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aWater Bucket"
+        lore:
+          - "&8Spray"
+          - ""
+          - "&7Select Water Bucket Spray."
+          - <price_status>
+          - ""
+          - <select_status>
+      '30':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '32':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  toppers:
+    title: Island Toppers
+    icons:
+      '10':
+        name: "&aNone"
+        lore:
+          - "&8Island Topper"
+          - ""
+          - "&7Select the NONE Island Topper to"
+          - "&7spawn above your island."
+          - <price_status>
+          - ""
+          - <select_status>
+      '11':
+        name: "&aBunny"
+        lore:
+          - "&8Island Topper"
+          - ""
+          - "&7Select the Bunny Island Topper"
+          - "&7to spawn above your island."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aChicken"
+        lore:
+          - "&8Island Topper"
+          - ""
+          - "&7Select the Chicken Island Topper"
+          - "&7to spawn above your island."
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aSheep"
+        lore:
+          - "&8Island Topper"
+          - ""
+          - "&7Select the Sheep Island Topper"
+          - "&7to spawn above your island."
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aSlime"
+        lore:
+          - "&8Island Topper"
+          - ""
+          - "&7Select the Slime Island Topper"
+          - "&7to spawn above your island."
+          - <price_status>
+          - ""
+          - <select_status>
+      '15':
+        name: "&aSword"
+        lore:
+          - "&8Island Topper"
+          - ""
+          - "&7Select the Sword Island Topper"
+          - "&7to spawn above your island."
+          - <price_status>
+          - ""
+          - <select_status>
+      '16':
+        name: "&aSheep Rainbow"
+        lore:
+          - "&8Island Topper"
+          - ""
+          - "&7Select the Rainbow Sheep Island"
+          - "&7Topper to spawn above your"
+          - "&7island."
+          - <price_status>
+          - ""
+          - <select_status>
+      '30':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '32':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  cries:
+    title: Cries
+    icons:
+      '10':
+        name: "&aNone"
+        lore:
+          - "&8Death Cry"
+          - ""
+          - "&7Plays the NONE death Cry when"
+          - "&7you die."
+          - <price_status>
+          - ""
+          - <select_status>
+      '11':
+        name: "&aBat"
+        lore:
+          - "&8Death Cry"
+          - ""
+          - "&7Plays the Bat Death Cry"
+          - "&7when your die."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aSkeleton"
+        lore:
+          - "&8Death Cry"
+          - ""
+          - "&7Plays the Skeleton Death Cry"
+          - "&7when your die."
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aWolf"
+        lore:
+          - "&8Death Cry"
+          - ""
+          - "&7Plays the Wolf Death Cry"
+          - "&7when your die."
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aEnder Dragon"
+        lore:
+          - "&8Death Cry"
+          - ""
+          - "&7Plays the Ender Dragon Death Cry"
+          - "&7when your die."
+          - <price_status>
+          - ""
+          - <select_status>
+      '15':
+        name: "&aBurp"
+        lore:
+          - "&8Death Cry"
+          - ""
+          - "&7Plays the Burp Death Cry"
+          - "&7when your die."
+          - <price_status>
+          - ""
+          - <select_status>
+      '16':
+        name: "&aEnderman"
+        lore:
+          - "&8Death Cry"
+          - ""
+          - "&7Plays the Enderman Death Cry"
+          - "&7when your die."
+          - <price_status>
+          - ""
+          - <select_status>
+      '19':
+        name: "&aFirework"
+        lore:
+          - "&8Death Cry"
+          - ""
+          - "&7Plays the Firework Death Cry"
+          - "&7when your die."
+          - <price_status>
+          - ""
+          - <select_status>
+      '39':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '41':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  shopkeepers:
+    title: Shop Keeper
+    icons:
+      '10':
+        name: "&aAdventure Time"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Adventure Time as"
+          - "&7your Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '11':
+        name: "&aAmong Us"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Among Us as your"
+          - "&7Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aAstronaut"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Astronaut as your"
+          - "&7Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aAxolotl"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Axolotl as your"
+          - "&7Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aCovid 19"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Covid 19 as your"
+          - "&7Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '15':
+        name: "&aAlien"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Alien as your Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '16':
+        name: "&aPokemon"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Pokemon as your Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '19':
+        name: "&aNaruto"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Naruto as your Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '20':
+        name: "&aPolice"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Police as your Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '21':
+        name: "&aDragon Ball"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select Dragon Ball as your"
+          - "&7Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '22':
+        name: "&aLGBT"
+        lore:
+          - "&8Shop Keeper"
+          - ""
+          - "&7Select LGBT as your Shopkeeper!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '39':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '41':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  killmessages:
+    title: Kill Messages
+    icons:
+      '10':
+        name: "&aDefault"
+        lore:
+          - "&8Kill Messages"
+          - ""
+          - "&7Select the Default Messages"
+          - "&7for in-game chat messages!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '11':
+        name: "&aDramatic"
+        lore:
+          - "&8Kill Messages"
+          - ""
+          - "&7Select the Dramatic Messages"
+          - "&7for in-game chat messages!"
+          - <price_status>
+          - ""
+          - <select_status>
+      '30':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '32':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  glyphs:
+    title: Glyphs
+    icons:
+      '10':
+        name: "&aNONE"
+        lore:
+          - "&8Glyph"
+          - ""
+          - "&7Select the NONE Glyph. This"
+          - "&7change is cosmetic."
+          - ""
+          - <select_status>
+      '11':
+        name: "&aDiamond"
+        lore:
+          - "&8Glyph"
+          - ""
+          - "&7Select the Diamond Glyph. This"
+          - "&7change is cosmetic."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aEmerald"
+        lore:
+          - "&8Glyph"
+          - ""
+          - "&7Select the Emerald Glyph. This"
+          - "&7change is cosmetic."
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aGold"
+        lore:
+          - "&8Glyph"
+          - ""
+          - "&7Select the Gold Glyph. This"
+          - "&7change is cosmetic."
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aURSS"
+        lore:
+          - "&8Glyph"
+          - ""
+          - "&7Select the URSS Glyph. This"
+          - "&7change is cosmetic."
+          - <price_status>
+          - ""
+          - <select_status>
+      '30':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '32':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  beddestroys:
+    title: Bed Destroys
+    icons:
+      '10':
+        name: "&aNone"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Plays the NONE Bed Destroy when"
+          - "&7you break a bed."
+          - ""
+          - <select_status>
+      '11':
+        name: "&aSquid Missile"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Breaking a bed will spawn a"
+          - "&7fellow companion."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aFirework"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Breaking a bed will launch"
+          - "&7fireworks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aLightning Strike"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Breaking a bed will wake up"
+          - "&7Thor."
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aLava Explosion"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Breaking a bed will make it"
+          - "&7explode into lava."
+          - <price_status>
+          - ""
+          - <select_status>
+      '15':
+        name: "&aPig Missile"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Breaking a bed will spawn a"
+          - "&7fellow companion."
+          - <price_status>
+          - ""
+          - <select_status>
+      '16':
+        name: "&aTornado"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Breaking a bed will summon a"
+          - "&7vortex."
+          - <price_status>
+          - ""
+          - <select_status>
+      '19':
+        name: "&aThief"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Plays the Thief Bed Destroy when"
+          - "&7you break a bed."
+          - <price_status>
+          - ""
+          - <select_status>
+      '20':
+        name: "&aEgg Explosion"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Plays the Egg Explosion Bed"
+          - "&7Destroy when you break a bed."
+          - <price_status>
+          - ""
+          - <select_status>
+      '21':
+        name: "&aBlizzard"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Plays the Blizzard Bed Destroy"
+          - "&7when you break a bed."
+          - <price_status>
+          - ""
+          - <select_status>
+      '22':
+        name: "&aPig Explosion"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Breaking a bed will spawn a"
+          - "&7bunch of baby pigs."
+          - <price_status>
+          - ""
+          - <select_status>
+      '23':
+        name: "&aLady Bug"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Plays the Lady Bug Bed Destroy"
+          - "&7when you break a bed."
+          - <price_status>
+          - ""
+          - <select_status>
+      '24':
+        name: "&aFire Dance"
+        lore:
+          - "&8Bed Destroy"
+          - ""
+          - "&7Plays the Fire Dance Bed Destroy"
+          - "&7when you break a bed."
+          - <price_status>
+          - ""
+          - <select_status>
+      '39':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '41':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  woodskins:
+    title: Wood Skins
+    icons:
+      '10':
+        name: "&aNone"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Selecting this option disable"
+          - "&7your Wood Skin."
+          - ""
+          - <select_status>
+      '11':
+        name: "&aSpruce Plank"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Spruce Plank Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '12':
+        name: "&aBirch Plank"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Birch Plank Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '13':
+        name: "&aJungle Plank"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Jungle Plank Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '14':
+        name: "&aAcacia Plank"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Acacia Plank Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '15':
+        name: "&aDark Oak Plank"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Dark Oak Plank Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '16':
+        name: "&aOak Log"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Oak Log Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '19':
+        name: "&aSpruce Log"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Spruce Log Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '20':
+        name: "&aBirch Log"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Birch Log Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '21':
+        name: "&aJungle Log"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Jungle Log Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '22':
+        name: "&aAcacia Log"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Acacia Log Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '23':
+        name: "&aDark Oak Log"
+        lore:
+          - "&8Wood Skin"
+          - ""
+          - "&7Select the Dark Oak Log Wood"
+          - "&7Skin to be used when placing"
+          - "&7wood blocks."
+          - <price_status>
+          - ""
+          - <select_status>
+      '39':
+        name: "&cGo Return"
+        lore:
+          - "&7To Bed Wars Shop"
+      '41':
+        name: "&fTotal Coins: &a<bw-points>"
+        lore:
+          - "&6https://store.minecraft.net/"
+  votes:
+    title: Votes
+    icons:
+      '11':
+        name: "&aShop & Upgrades"
+        lore:
+          - "&8Vote Shop & Upgrades"
+          - ""
+          - "&7You can vote for the types of"
+          - "&7items in the store."
+          - ""
+          - "&eOnly for donors."
+      '13':
+        name: "&aHealth"
+        lore:
+          - "&8Vote Health"
+          - ""
+          - "&7You can vote for the number"
+          - "&7of hearts in the game."
+          - ""
+          - "&eOnly for donors."
+      '15':
+        name: "&aTime"
+        lore:
+          - "&8Vote Time"
+          - ""
+          - "&7You can vote for the time in game."
+          - ""
+          - "&eOnly for donors."
+      '31':
+        name: "&cClose"
+  shop_votes:
+    title: Shop Vote
+    icons:
+      '11':
+        name: "&aBasic"
+        lore:
+          - "&8Shop & Upgrades"
+          - ""
+          - "&7Store prices will be higher"
+          - "&7than normal and open fewer items."
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '13':
+        name: "&aNormal"
+        lore:
+          - "&8Shop & Upgrades"
+          - ""
+          - "&7The store is normal."
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '15':
+        name: "&aOverpowered"
+        lore:
+          - "&8Shop & Upgrades"
+          - ""
+          - "&7The prices of the store will be"
+          - "&7lower and open more items."
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '31':
+        name: "&cGo Return"
+        lore:
+          - "&7To Votes Menu."
+  health_votes:
+    title: Health Vote
+    icons:
+      '11':
+        name: "&aHardcore"
+        lore:
+          - "&8Health"
+          - ""
+          - "&7The life of the players will be"
+          - "&75 hearts!"
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '13':
+        name: "&aNormal"
+        lore:
+          - "&8Health"
+          - ""
+          - "&7The life of the players will be"
+          - "&7normal!"
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '15':
+        name: "&aDouble"
+        lore:
+          - "&8Health"
+          - ""
+          - "&7The life of the players will be"
+          - "&7double!"
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '31':
+        name: "&cGo Return"
+        lore:
+          - "&7To Votes Menu."
+  time_votes:
+    title: Time Vote
+    icons:
+      '11':
+        name: "&aDay"
+        lore:
+          - "&8Time"
+          - ""
+          - "&7The time will be day."
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '13':
+        name: "&aSunset"
+        lore:
+          - "&8Time"
+          - ""
+          - "&7The time will be sunset."
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '15':
+        name: "&aNight"
+        lore:
+          - "&8Time"
+          - ""
+          - "&7The time will be night."
+          - ""
+          - "&7There are &6<votes> &7votes."
+          - ""
+          - <vote_status>
+      '31':
+        name: "&cGo Return"
+        lore:
+          - "&7To Votes Menu."
+  stats:
+    title: Bed Wars Statistics
+    icons:
+      '4':
+        name: "&aOverall Statistics"
+        lore:
+          - "&7Games Played: &a<bw-total_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-total_beds_broken>"
+          - "&7Beds Lost: &a<bw-total_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-total_kills>"
+          - "&7Deaths: &a<bw-total_deaths>"
+          - "&7Final Kills: &a<bw-total_final_kills>"
+          - "&7Final Deaths: &a<bw-total_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-total_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-total_wins>"
+          - "&7Losses: &a<bw-total_losses>"
+          - ""
+          - "&7Winsteak: <bw-total_winsteak>"
+      '19':
+        name: "&aSolo Statistics"
+        lore:
+          - "&7Games Played: &a<bw-solo_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-solo_beds_broken>"
+          - "&7Beds Lost: &a<bw-solo_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-solo_kills>"
+          - "&7Deaths: &a<bw-solo_deaths>"
+          - "&7Final Kills: &a<bw-solo_final_kills>"
+          - "&7Final Deaths: &a<bw-solo_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-solo_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-solo_wins>"
+          - "&7Losses: &a<bw-solo_losses>"
+      '21':
+        name: "&aDoubles Statistics"
+        lore:
+          - "&7Games Played: &a<bw-doubles_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-doubles_beds_broken>"
+          - "&7Beds Lost: &a<bw-doubles_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-doubles_kills>"
+          - "&7Deaths: &a<bw-doubles_deaths>"
+          - "&7Final Kills: &a<bw-doubles_final_kills>"
+          - "&7Final Deaths: &a<bw-doubles_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-doubles_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-doubles_wins>"
+          - "&7Losses: &a<bw-doubles_losses>"
+      '23':
+        name: "&aTrios Statistics"
+        lore:
+          - "&7Games Played: &a<bw-trios_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-trios_beds_broken>"
+          - "&7Beds Lost: &a<bw-trios_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-trios_kills>"
+          - "&7Deaths: &a<bw-trios_deaths>"
+          - "&7Final Kills: &a<bw-trios_final_kills>"
+          - "&7Final Deaths: &a<bw-trios_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-trios_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-trios_wins>"
+          - "&7Losses: &a<bw-trios_losses>"
+      '25':
+        name: "&aQuartets Statistics"
+        lore:
+          - "&7Games Played: &a<bw-quartets_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-quartets_beds_broken>"
+          - "&7Beds Lost: &a<bw-quartets_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-quartets_kills>"
+          - "&7Deaths: &a<bw-quartets_deaths>"
+          - "&7Final Kills: &a<bw-quartets_final_kills>"
+          - "&7Final Deaths: &a<bw-quartets_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-quartets_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-quartets_wins>"
+          - "&7Losses: &a<bw-quartets_losses>"
+      '31':
+        name: "&a1vs1 Statistics"
+        lore:
+          - "&7Games Played: &a<bw-1vs1_games_played>"
+          - ""
+          - "&7Beds Broken: &a<bw-1vs1_beds_broken>"
+          - "&7Beds Lost: &a<bw-1vs1_beds_lost>"
+          - ""
+          - "&7Kills: &a<bw-1vs1_kills>"
+          - "&7Deaths: &a<bw-1vs1_deaths>"
+          - "&7Final Kills: &a<bw-1vs1_final_kills>"
+          - "&7Final Deaths: &a<bw-1vs1_final_deaths>"
+          - "&7Final K/D Radio: &a<bw-1vs1_final_kd>"
+          - ""
+          - "&7Wins: &a<bw-1vs1_wins>"
+          - "&7Losses: &a<bw-1vs1_losses>"
+      '49':
+        name: "&cClose"
+  team_selector:
+    title: Team Selector
+    icons:
+      '{team}':
+        name: "&fTeam: <color><team_name>"
+        lore:
+          - "&8BedWars Team"
+          - ""
+          - "&eTeam Members:"
+          - <team_players>
+          - ""
+          - <team_status>
+      '40':
+        name: "&cClose"
+  teleport_spectator:
+    title: Teleporter
+    icons:
+      '{player}':
+        name: "&a<name>"
+        lore:
+          - "&7Health: &f<health>%"
+          - "&7Food: &f<food>%"
+          - "&7Team: <team_color><team_name>"
+          - ""
+          - "&7Click to spectate!"
+  options_spectator:
+    title: Spectator Settings
+    icons:
+      '11':
+        name: "&aNo Speed"
+      '12':
+        name: "&aSpeed I"
+      '13':
+        name: "&aSpeed II"
+      '14':
+        name: "&aSpeed III"
+      '15':
+        name: "&aSpeed IV"
+      '20':
+        name: <spectator_status>
+        lore:
+          - <spectator_status>
+      '21':
+        name: <spectator_status>
+        lore:
+          - <spectator_status>
+      '23':
+        name: <spectator_status>
+        lore:
+          - <spectator_status>
+      '24':
+        name: <spectator_status>
+        lore:
+          - <spectator_status>
+  tracker_communication:
+    title: Tracker & Communication
+    icons:
+      '11':
+        name: "&aQuick Communications"
+        lore:
+          - "&7Send highlighted chat messages"
+          - "&7to your teammates!"
+          - ""
+          - "&eClick to open!"
+      '15':
+        name: "&aTracker Shop"
+        lore:
+          - "&7Purchase tracking upgrade for"
+          - "&7your compass which will track"
+          - "&7each player on a specific team"
+          - "&7until your die."
+          - ""
+          - "&eClick to open!"
+  quick_communications:
+    title: Quick Communications
+    icons:
+      '10':
+        name: "&aHello ( ﾟ◡ﾟ)/!"
+        lore:
+          - ""
+          - "&eClick to send!"
+      '11':
+        name: "&aI'm coming back to base!"
+        lore:
+          - ""
+          - "&eClick to send!"
+      '12':
+        name: "&aI'm defending!"
+        lore:
+          - ""
+          - "&eClick to send!"
+      '13':
+        name: "&aI'm attacking"
+        lore:
+          - "&7You will be able to select the"
+          - "&7Team."
+          - ""
+          - "&eClick to send!"
+      '14':
+        name: "&aI'm collecting resources!"
+        lore:
+          - "&7You will able to select the"
+          - "&7Resource."
+          - ""
+          - "&eClick to send!"
+      '15':
+        name: "&aI have resources!"
+        lore:
+          - "&7You will able to select the"
+          - "&7Resource."
+          - ""
+          - "&eClick to send!"
+      '20':
+        name: "&aThank You"
+        lore:
+          - ""
+          - "&eClick to send!"
+      '21':
+        name: "&aGet back to base"
+        lore:
+          - ""
+          - "&eClick to send!"
+      '22':
+        name: "&aPlease defend!"
+        lore:
+          - ""
+          - "&eClick to send!"
+      '23':
+        name: "&aLet's attack!"
+        lore:
+          - "&7You will be able to select the"
+          - "&7Team."
+          - ""
+          - "&eClick to send!"
+      '24':
+        name: "&aWe need resources!"
+        lore:
+          - "&7You will able to select the"
+          - "&7Resource."
+          - ""
+          - "&eClick to send!"
+      '25':
+        name: "&aPlayer incoming!"
+        lore:
+          - ""
+          - "&eClick to send!"
+      '40':
+        name: "&aGo Back"
+        lore:
+          - "&7To Tracker & Communication"
+  '{quick_communications_resources}':
+    title: "Select an option:"
+    icons:
+      '{diamond}':
+        name: "&a<message>"
+        lore:
+          - "&7Click to send the message: '&a<message>&7'"
+          - "&7to your teammates!"
+          - ""
+          - "&eClick to send!"
+      '{iron}':
+        name: "&a<message>"
+        lore:
+          - "&7Click to send the message: '&a<message>&7'"
+          - "&7to your teammates!"
+          - ""
+          - "&eClick to send!"
+      '{gold}':
+        name: "&a<message>"
+        lore:
+          - "&7Click to send the message: '&a<message>&7'"
+          - "&7to your teammates!"
+          - ""
+          - "&eClick to send!"
+      '{emerald}':
+        name: "&a<message>"
+        lore:
+          - "&7Click to send the message: '&a<message>&7'"
+          - "&7to your teammates!"
+          - ""
+          - "&eClick to send!"
+  '{quick_communications_team}':
+    title: "Select an option:"
+    icons:
+      '{team}':
+        name: "&a<message>"
+        lore:
+          - "&7Click to send the message: '&a<message>&7'"
+          - "&7to your teammates!"
+          - ""
+          - "&eClick to send!"
+  tracker_shop:
+    title: Purchase Enemy Tracker
+    icons:
+      '{team}':
+        name: <team_color>Track Team <team_name>
+        lore:
+          - "&7Purchase tracking upgrade for"
+          - "&7your compass which will track"
+          - "&7the closest player on a specific"
+          - "&7team until you die."
+          - <cost_status>
+          - ""
+          - <status>
+      '40':
+        name: "&aGo Back"
+        lore:
+          - "&7To Tracker & Communication"
+  solo:
+    title: Play Bed Wars
+    icons:
+      '12':
+        name: "&aBed Wars (Solo)"
+        lore:
+          - "&7Play Bed Wars Solo."
+          - ""
+          - "&eClick to play!"
+      '14':
+        name: "&aMap Selector (Solo)"
+        lore:
+          - "&7Pick which map you want to play"
+          - "&7from a list of available servers."
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cClose"
+        lore: []
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it."
+  doubles:
+    title: Play Bed Wars
+    icons:
+      '12':
+        name: "&aBed Wars (Doubles)"
+        lore:
+          - "&7Play Bed Wars Doubles."
+          - ""
+          - "&eClick to play!"
+      '14':
+        name: "&aMap Selector (Doubles)"
+        lore:
+          - "&7Pick which map you want to play"
+          - "&7from a list of available servers."
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cClose"
+        lore: []
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it."
+  trios:
+    title: Play Bed Wars
+    icons:
+      '12':
+        name: "&aBed Wars (Trios)"
+        lore:
+          - "&7Play Bed Wars Trios."
+          - ""
+          - "&eClick to play!"
+      '14':
+        name: "&aMap Selector (Trios)"
+        lore:
+          - "&7Pick which map you want to play"
+          - "&7from a list of available servers."
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cClose"
+        lore: []
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it."
+  quartets:
+    title: Play Bed Wars
+    icons:
+      '12':
+        name: "&aBed Wars (Quartets"
+        lore:
+          - "&7Play Bed Wars Quartets."
+          - ""
+          - "&eClick to play!"
+      '14':
+        name: "&aMap Selector (Quartets)"
+        lore:
+          - "&7Pick which map you want to play"
+          - "&7from a list of available servers."
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cClose"
+        lore: []
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it."
+  1vs1:
+    title: Play Bed Wars
+    icons:
+      '12':
+        name: "&aBed Wars (1vs1)"
+        lore:
+          - "&7Play Bed Wars 1vs1."
+          - ""
+          - "&eClick to play!"
+      '14':
+        name: "&aMap Selector (1vs1)"
+        lore:
+          - "&7Pick which map you want to play"
+          - "&7from a list of available servers."
+          - ""
+          - "&eClick to browse!"
+      '31':
+        name: "&cClose"
+        lore: []
+      '35':
+        name: "&cClick here to rejoin!"
+        lore:
+          - "&7Click here to rejoin your game"
+          - "&7if you have been disconnected"
+          - "&7from it."
+          - "&7from it."
+  map_selector:
+    title: Bed Wars Maps
+    icons:
+      '{map}':
+        name: <color><name>
+        lore:
+          - "&8<group>"
+          - ""
+          - "&7Available Servers: &a<available_servers>"
+          - "&7Times Joined: &a<times_joined>"
+          - "&7Map Selections: &a<map_selections>"
+          - ""
+          - <status>
+          - "&eRight click to toggle favorite!"
+      '{random}':
+        name: "&aRandom Map"
+        lore:
+          - "&8<group>"
+          - ""
+          - "&7Map Selections: &a<map_selections>"
+          - ""
+          - <status>
+          - "&eRight click to toggle favorite!"
+      '{favourite}':
+        name: "&aRandom Favourite"
+        lore:
+          - "&8<group>"
+          - ""
+          - "&7Map Selections: &a<map_selections>"
+          - ""
+          - <status>
+          - "&eRight click to toggle favorite!"
+      '{next}':
+        name: "&aNext Page!"
+        lore:
+          - "&7Click to go to page <page>!"
+      '{previous}':
+        name: "&aPrevious page!"
+        lore:
+          - "&7Click to go to page <page>!"
+      '53':
+        name: "&aMap Selection"
+        lore:
+          - "&7Each day you can choose which"
+          - "&7map you want to play 1 time."
+          - "&7Unlock unlimited map selection"
+          - "&7by upgrading to &bMVP&c+ &7rank"
+          - "&7on your store!"
+          - ""
+          - "&ehttps://store.minecraft.net"
+
+upgrade_menus:
+  status:
+    price:
+      unlock: "&aUNLOCKED"
+      buy: "&eClick to purchase!"
+      need: "&cYou don't have enough <material>!"
+    color_name:
+      buy: "&a"
+      need: "&c"
+    color_level:
+      buyed: "&a"
+      default: "&7"
+    trap:
+      max: "&cTrap queue full!"
+      browse: "&eClick to browse!"
+    trap_price:
+      - ""
+      - "&7Cost: &b<cost> Diamond"
+    trap_queue_lore:
+      - "&7Queued by: &a<name>"
+  basic:
+    upgrades_menu:
+      inventory_title: Upgrades & Traps
+      decoration:
+        '1':
+          name: "&8⬆ &7Purchasable"
+          lore:
+            - "&8⬇ &7Traps Queue"
+      contents:
+        sharpened_swords:
+          name: <color>Sharpened Swords
+          lore:
+            - "&7Your swords permanently gains"
+            - "&7Sharpness I on all swords and"
+            - "&7axes!"
+            - ""
+            - "&7Cost: &b8 Diamonds"
+            - ""
+            - <upgrade_status>
+        reinforced_armor:
+          levels:
+            '1':
+              name: <color>Reinforced Armor I
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "<color>Tier 1: Protection I, &b4 Diamonds"
+                - "&7Tier 2: Protection II, &b8 Diamonds"
+                - "&7Tier 3: Protection III, &b16 Diamonds"
+                - "&7Tier 4: Protection IV, &b24 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Reinforced Armor II
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b4 Diamonds"
+                - "<color>Tier 2: Protection II, &b8 Diamonds"
+                - "&7Tier 3: Protection III, &b16 Diamonds"
+                - "&7Tier 4: Protection IV, &b124 Diamonds"
+                - ""
+                - <upgrade_status>
+            '3':
+              name: <color>Reinforced Armor III
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b4 Diamonds"
+                - "&aTier 2: Protection II, &b8 Diamonds"
+                - "<color>Tier 3: Protection III, &b16 Diamonds"
+                - "&7Tier 4: Protection IV, &b24 Diamonds"
+                - ""
+                - <upgrade_status>
+            '4':
+              name: <color>Reinforced Armor IV
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b4 Diamonds"
+                - "&aTier 2: Protection II, &b8 Diamonds"
+                - "&aTier 3: Protection III, &b16 Diamonds"
+                - "<color>Tier 4: Protection IV, &b24 Diamonds"
+                - ""
+                - <upgrade_status>
+        maniac_miner:
+          levels:
+            '1':
+              name: <color>Maniac Miner I
+              lore:
+                - "&7All players on your team"
+                - "&7permanently gain Haste."
+                - ""
+                - "<color>Tier 1: Haste I, &b4 Diamonds"
+                - "&7Tier 2: Haste II, &b6 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Maniac Miner II
+              lore:
+                - "&7All players on your team"
+                - "&7permanently gain Haste."
+                - ""
+                - "&aTier 1: Haste I, &b4 Diamonds"
+                - "<color>Tier 2: Haste II, &b6 Diamonds"
+                - ""
+                - <upgrade_status>
+        iron_forge:
+          levels:
+            '1':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "<color>Tier 1: +50% Resources, &b6 Diamonds"
+                - "&7Tier 2: +100% Resources, &b12 Diamonds"
+                - "&7Tier 3: Spawn emeralds, &b18 Diamonds"
+                - "&7Tier 4: +200% Resources, &b24 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b6 Diamonds"
+                - "<color>Tier 2: +100% Resources, &b12 Diamonds"
+                - "&7Tier 3: Spawn emeralds, &b18 Diamonds"
+                - "&7Tier 4: +200% Resources, &b24 Diamonds"
+                - ""
+                - <upgrade_status>
+            '3':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b6 Diamonds"
+                - "&aTier 2: +100% Resources, &b12 Diamonds"
+                - "<color>Tier 3: Spawn emeralds, &b18 Diamonds"
+                - "&7Tier 4: +200% Resources, &b24 Diamonds"
+                - ""
+                - <upgrade_status>
+            '4':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b6 Diamonds"
+                - "&aTier 2: +100% Resources, &b12 Diamonds"
+                - "&aTier 3: Spawn emeralds, &b18 Diamonds"
+                - "<color>Tier 4: +200% Resources, &b24 Diamonds"
+                - ""
+                - <upgrade_status>
+        heal_pool:
+          name: <color>Heal Pool
+          lore:
+            - "&7Creates a Regeneration field"
+            - "&7around your base!"
+            - ""
+            - "&7Cost: &b3 Diamond"
+            - ""
+            - <upgrade_status>
+        sudden_death:
+          name: <color>Sudden Death
+          lore:
+            - "&7You team will have 2 dragons"
+            - "&7instead of 1 during deathmatch!"
+            - ""
+            - "&7Cost: &b10 Diamonds"
+            - ""
+            - <upgrade_status>
+        buy_traps:
+          name: "&eBuy a trap"
+          lore:
+            - "&7Purchased traps will be queued"
+            - "&7on the right.  "
+            - ""
+            - "&eClick to browse!"
+        selected_trap_1:
+          name: "<color>Trap #1: No Trap!"
+          lore:
+            - "&7The first enemy to walk into"
+            - "&7your base will trigger this"
+            - "&7trap!"
+            - ""
+            - "&7Purchasing a trap will queue it"
+            - "&7here. Its cost will scale based"
+            - "&7on the number of traps queued."
+            - ""
+            - "&7Next trap: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Trap #2: No Trap!"
+          lore:
+            - "&7The second enemy to walk into"
+            - "&7your base will trigger this"
+            - "&7trap!"
+            - ""
+            - "&7Purchasing a trap will queue it"
+            - "&7here. Its cost will scale based"
+            - "&7on the number of traps queued."
+            - ""
+            - "&7Next trap: <color><cost> <material>"
+    traps_menu:
+      inventory_title: Traps menu
+      contents:
+        blindness:
+          name: <color>It's a trap!
+          lore:
+            - "&7Inflicts Blindness and Slowness"
+            - "&7for 8 seconds."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        counter-offensive_trap:
+          name: <color>Counter-Offensive Trap
+          lore:
+            - "&7Grants Speed I and Jump Boost II"
+            - "&7for 10 seconds to allied players"
+            - "&7near your base."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        alarm_trap:
+          name: <color>Alarm Trap
+          lore:
+            - "&7Reveals invisible players as"
+            - "&7well as their name and team."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        miner_fatigue_trap:
+          name: <color>Miner Fatigue Trap
+          lore:
+            - "&7Inflict Mining Fatigue for 10"
+            - "&7seconds."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        return:
+          name: "&aGo Back"
+          lore:
+            - "&7To Upgrades & Traps"
+  default:
+    upgrades_menu:
+      inventory_title: Upgrades & Traps
+      decoration:
+        '1':
+          name: "&8⬆ &7Purchasable"
+          lore:
+            - "&8⬇ &7Traps Queue"
+      contents:
+        sharpened_swords:
+          name: <color>Sharpened Swords
+          lore:
+            - "&7Your swords permanently gains"
+            - "&7Sharpness I on all swords and"
+            - "&7axes!"
+            - ""
+            - "&7Cost: &b4 Diamonds"
+            - ""
+            - <upgrade_status>
+        reinforced_armor:
+          levels:
+            '1':
+              name: <color>Reinforced Armor I
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "<color>Tier 1: Protection I, &b2 Diamonds"
+                - "&7Tier 2: Protection II, &b4 Diamonds"
+                - "&7Tier 3: Protection III, &b8 Diamonds"
+                - "&7Tier 4: Protection IV, &b16 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Reinforced Armor II
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b2 Diamonds"
+                - "<color>Tier 2: Protection II, &b4 Diamonds"
+                - "&7Tier 3: Protection III, &b8 Diamonds"
+                - "&7Tier 4: Protection IV, &b16 Diamonds"
+                - ""
+                - <upgrade_status>
+            '3':
+              name: <color>Reinforced Armor III
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b2 Diamonds"
+                - "&aTier 2: Protection II, &b4 Diamonds"
+                - "<color>Tier 3: Protection III, &b8 Diamonds"
+                - "&7Tier 4: Protection IV, &b16 Diamonds"
+                - ""
+                - <upgrade_status>
+            '4':
+              name: <color>Reinforced Armor IV
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b2 Diamonds"
+                - "&aTier 2: Protection II, &b4 Diamonds"
+                - "&aTier 3: Protection III, &b8 Diamonds"
+                - "<color>Tier 4: Protection IV, &b16 Diamonds"
+                - ""
+                - <upgrade_status>
+        maniac_miner:
+          levels:
+            '1':
+              name: <color>Maniac Miner I
+              lore:
+                - "&7All players on your team"
+                - "&7permanently gain Haste."
+                - ""
+                - "<color>Tier 1: Haste I, &b2 Diamonds"
+                - "&7Tier 2: Haste II, &b4 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Maniac Miner II
+              lore:
+                - "&7All players on your team"
+                - "&7permanently gain Haste."
+                - ""
+                - "&aTier 1: Haste I, &b2 Diamonds"
+                - "<color>Tier 2: Haste II, &b4 Diamonds"
+                - ""
+                - <upgrade_status>
+        iron_forge:
+          levels:
+            '1':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "<color>Tier 1: +50% Resources, &b2 Diamonds"
+                - "&7Tier 2: +100% Resources, &b4 Diamonds"
+                - "&7Tier 3: Spawn emeralds, &b6 Diamonds"
+                - "&7Tier 4: +200% Resources, &b8 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b2 Diamonds"
+                - "<color>Tier 2: +100% Resources, &b4 Diamonds"
+                - "&7Tier 3: Spawn emeralds, &b6 Diamonds"
+                - "&7Tier 4: +200% Resources, &b8 Diamonds"
+                - ""
+                - <upgrade_status>
+            '3':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b2 Diamonds"
+                - "&aTier 2: +100% Resources, &b4 Diamonds"
+                - "<color>Tier 3: Spawn emeralds, &b6 Diamonds"
+                - "&7Tier 4: +200% Resources, &b8 Diamonds"
+                - ""
+                - <upgrade_status>
+            '4':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b2 Diamonds"
+                - "&aTier 2: +100% Resources, &b4 Diamonds"
+                - "&aTier 3: Spawn emeralds, &b6 Diamonds"
+                - "<color>Tier 4: +200% Resources, &b8 Diamonds"
+                - ""
+                - <upgrade_status>
+        heal_pool:
+          name: <color>Heal Pool
+          lore:
+            - "&7Creates a Regeneration field"
+            - "&7around your base!"
+            - ""
+            - "&7Cost: &b1 Diamond"
+            - ""
+            - <upgrade_status>
+        sudden_death:
+          name: <color>Sudden Death
+          lore:
+            - "&7You team will have 2 dragons"
+            - "&7instead of 1 during deathmatch!"
+            - ""
+            - "&7Cost: &b5 Diamonds"
+            - ""
+            - <upgrade_status>
+        buy_traps:
+          name: "&eBuy a trap"
+          lore:
+            - "&7Purchased traps will be queued"
+            - "&7on the right.  "
+            - ""
+            - <trap_status>
+        selected_trap_1:
+          name: "<color>Trap #1: No Trap!"
+          lore:
+            - "&7The first enemy to walk into"
+            - "&7your base will trigger this"
+            - "&7trap!"
+            - ""
+            - "&7Purchasing a trap will queue it"
+            - "&7here. Its cost will scale based"
+            - "&7on the number of traps queued."
+            - ""
+            - "&7Next trap: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Trap #2: No Trap!"
+          lore:
+            - "&7The second enemy to walk into"
+            - "&7your base will trigger this"
+            - "&7trap!"
+            - ""
+            - "&7Purchasing a trap will queue it"
+            - "&7here. Its cost will scale based"
+            - "&7on the number of traps queued."
+            - ""
+            - "&7Next trap: <color><cost> <material>"
+        selected_trap_3:
+          name: "<color>Trap #3: No Trap!"
+          lore:
+            - "&7The third enemy to walk into"
+            - "&7your base will trigger this"
+            - "&7trap!"
+            - ""
+            - "&7Purchasing a trap will queue it"
+            - "&7here. Its cost will scale based"
+            - "&7on the number of traps queued."
+            - ""
+            - "&7Next trap: <color><cost> <material>"
+    traps_menu:
+      inventory_title: Traps menu
+      contents:
+        blindness:
+          name: <color>It's a trap!
+          lore:
+            - "&7Inflicts Blindness and Slowness"
+            - "&7for 8 seconds."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        counter-offensive_trap:
+          name: <color>Counter-Offensive Trap
+          lore:
+            - "&7Grants Speed I and Jump Boost II"
+            - "&7for 10 seconds to allied players"
+            - "&7near your base."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        alarm_trap:
+          name: <color>Alarm Trap
+          lore:
+            - "&7Reveals invisible players as"
+            - "&7well as their name and team."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        miner_fatigue_trap:
+          name: <color>Miner Fatigue Trap
+          lore:
+            - "&7Inflict Mining Fatigue for 10"
+            - "&7seconds."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        return:
+          name: "&aGo Back"
+          lore:
+            - "&7To Upgrades & Traps"
+  overpowered:
+    upgrades_menu:
+      inventory_title: Upgrades & Traps
+      decoration:
+        '1':
+          name: "&8⬆ &7Purchasable"
+          lore:
+            - "&8⬇ &7Traps Queue"
+      contents:
+        sharpened_swords:
+          name: <color>Sharpened Swords
+          lore:
+            - "&7Your swords permanently gains"
+            - "&7Sharpness I on all swords and"
+            - "&7axes!"
+            - ""
+            - "&7Cost: &b2 Diamonds"
+            - ""
+            - <upgrade_status>
+        reinforced_armor:
+          levels:
+            '1':
+              name: <color>Reinforced Armor I
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "<color>Tier 1: Protection I, &b1 Diamonds"
+                - "&7Tier 2: Protection II, &b2 Diamonds"
+                - "&7Tier 3: Protection III, &b4 Diamonds"
+                - "&7Tier 4: Protection IV, &b8 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Reinforced Armor II
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b1 Diamonds"
+                - "<color>Tier 2: Protection II, &b2 Diamonds"
+                - "&7Tier 3: Protection III, &b4 Diamonds"
+                - "&7Tier 4: Protection IV, &b8 Diamonds"
+                - ""
+                - <upgrade_status>
+            '3':
+              name: <color>Reinforced Armor III
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b1 Diamonds"
+                - "&aTier 2: Protection II, &b2 Diamonds"
+                - "<color>Tier 3: Protection III, &b4 Diamonds"
+                - "&7Tier 4: Protection IV, &b8 Diamonds"
+                - ""
+                - <upgrade_status>
+            '4':
+              name: <color>Reinforced Armor IV
+              lore:
+                - "&7Your team permanently gains"
+                - "&7Protection on all armor pieces!"
+                - ""
+                - "&aTier 1: Protection I, &b1 Diamonds"
+                - "&aTier 2: Protection II, &b2 Diamonds"
+                - "&aTier 3: Protection III, &b4 Diamonds"
+                - "<color>Tier 4: Protection IV, &b8 Diamonds"
+                - ""
+                - <upgrade_status>
+        maniac_miner:
+          levels:
+            '1':
+              name: <color>Maniac Miner I
+              lore:
+                - "&7All players on your team"
+                - "&7permanently gain Haste."
+                - ""
+                - "<color>Tier 1: Haste I, &b1 Diamonds"
+                - "&7Tier 2: Haste II, &b2 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Maniac Miner II
+              lore:
+                - "&7All players on your team"
+                - "&7permanently gain Haste."
+                - ""
+                - "&aTier 1: Haste I, &b1 Diamonds"
+                - "<color>Tier 2: Haste II, &b2 Diamonds"
+                - ""
+                - <upgrade_status>
+        iron_forge:
+          levels:
+            '1':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "<color>Tier 1: +50% Resources, &b1 Diamonds"
+                - "&7Tier 2: +100% Resources, &b2 Diamonds"
+                - "&7Tier 3: Spawn emeralds, &b4 Diamonds"
+                - "&7Tier 4: +200% Resources, &b6 Diamonds"
+                - ""
+                - <upgrade_status>
+            '2':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b1 Diamonds"
+                - "<color>Tier 2: +100% Resources, &b2 Diamonds"
+                - "&7Tier 3: Spawn emeralds, &b4 Diamonds"
+                - "&7Tier 4: +200% Resources, &b6 Diamonds"
+                - ""
+                - <upgrade_status>
+            '3':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b1 Diamonds"
+                - "&aTier 2: +100% Resources, &b2 Diamonds"
+                - "<color>Tier 3: Spawn emeralds, &b4 Diamonds"
+                - "&7Tier 4: +200% Resources, &b6 Diamonds"
+                - ""
+                - <upgrade_status>
+            '4':
+              name: <color>Iron Forge
+              lore:
+                - "&7Upgrade resource spawning on"
+                - "&7your island."
+                - ""
+                - "&aTier 1: +50% Resources, &b1 Diamonds"
+                - "&aTier 2: +100% Resources, &b2 Diamonds"
+                - "&aTier 3: Spawn emeralds, &b4 Diamonds"
+                - "<color>Tier 4: +200% Resources, &b6 Diamonds"
+                - ""
+                - <upgrade_status>
+        heal_pool:
+          name: <color>Heal Pool
+          lore:
+            - "&7Creates a Regeneration field"
+            - "&7around your base!"
+            - ""
+            - "&7Cost: &b1 Diamond"
+            - ""
+            - <upgrade_status>
+        sudden_death:
+          name: <color>Sudden Death
+          lore:
+            - "&7You team will have 2 dragons"
+            - "&7instead of 1 during deathmatch!"
+            - ""
+            - "&7Cost: &b2 Diamonds"
+            - ""
+            - <upgrade_status>
+        buy_traps:
+          name: "&eBuy a trap"
+          lore:
+            - "&7Purchased traps will be queued"
+            - "&7on the right.  "
+            - ""
+            - <trap_status>
+        selected_trap_1:
+          name: "<color>Trap #1: No Trap!"
+          lore:
+            - "&7The first enemy to walk into"
+            - "&7your base will trigger this"
+            - "&7trap!"
+            - ""
+            - "&7Purchasing a trap will queue it"
+            - "&7here. Its cost will scale based"
+            - "&7on the number of traps queued."
+            - ""
+            - "&7Next trap: <color><cost> <material>"
+        selected_trap_2:
+          name: "<color>Trap #2: No Trap!"
+          lore:
+            - "&7The second enemy to walk into"
+            - "&7your base will trigger this"
+            - "&7trap!"
+            - ""
+            - "&7Purchasing a trap will queue it"
+            - "&7here. Its cost will scale based"
+            - "&7on the number of traps queued."
+            - ""
+            - "&7Next trap: <color><cost> <material>"
+        selected_trap_3:
+          name: "<color>Trap #3: No Trap!"
+          lore:
+            - "&7The third enemy to walk into"
+            - "&7your base will trigger this"
+            - "&7trap!"
+            - ""
+            - "&7Purchasing a trap will queue it"
+            - "&7here. Its cost will scale based"
+            - "&7on the number of traps queued."
+            - ""
+            - "&7Next trap: <color><cost> <material>"
+    traps_menu:
+      inventory_title: Traps menu
+      contents:
+        blindness:
+          name: <color>It's a trap!
+          lore:
+            - "&7Inflicts Blindness and Slowness"
+            - "&7for 8 seconds."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        counter-offensive_trap:
+          name: <color>Counter-Offensive Trap
+          lore:
+            - "&7Grants Speed I and Jump Boost II"
+            - "&7for 10 seconds to allied players"
+            - "&7near your base."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        alarm_trap:
+          name: <color>Alarm Trap
+          lore:
+            - "&7Reveals invisible players as"
+            - "&7well as their name and team."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        miner_fatigue_trap:
+          name: <color>Miner Fatigue Trap
+          lore:
+            - "&7Inflict Mining Fatigue for 10"
+            - "&7seconds."
+            - <trap_price_status>
+            - ""
+            - <upgrade_status>
+        return:
+          name: "&aGo Back"
+          lore:
+            - "&7To Upgrades & Traps"
+
+favorite_menu:
+  inventory_title: Adding to Quick Buy
+  status:
+    adding: "&eAdding item to Quick Slot!"
+    replace: "&eClick to replace!"
+    set: "&eClick to set!"
+
+shop_menu:
+  status:
+    favorite:
+      add: "&bSneak Click to add to Quick Buy!"
+      remove: "&bSneak Click to remove from Quick Buy!"
+    price:
+      buy: "&eClick to purchase!"
+      need: "&cYou don't have enough <material>!"
+    color:
+      buy: "&a"
+      need: "&c"
+  extras:
+    favorite:
+      name: "&cEmpty slot!"
+      lore:
+        - "&7This is a Quick Buy Slot!"
+        - "&bSneak Click &7any item in the"
+        - "&7shop to add it here."
+    in_category:
+      name: "&8&l⬆ &7Categories"
+      lore:
+        - "&8&l⬇ &7Items"
+    out_category:
+      name: "&8&l⬆ &7Categories"
+      lore:
+        - "&8&l⬇ &7Items"
+    hotbar_editor:
+      name: "&aHotbar Manager"
+      lore:
+        - "&7Edit preference slots for you"
+        - "&7items per category."
+        - ""
+        - "&eClick to edit!"
+    load_favorites:
+      name: "&aShop & Hotbar &6(Hypixel)"
+      lore:
+        - "&7By clicking you will get your"
+        - "&7hypixel configuration."
+        - ""
+        - "&cOnly for hypixel users."
+        - ""
+        - "&e&l→ &eClick to load the configuration!"
+  hotbar:
+    title: Hotbar Manager
+    contents:
+      return:
+        name: "&aGo Back"
+        lore:
+          - "&7To Quick Buy"
+      reset:
+        name: "&cReset to Default"
+        lore:
+          - "&7Reset your hotbar to the"
+          - "&7default."
+      separator:
+        name: "&8&l⬆ &7Categories"
+        lore:
+          - "&8&l⬇ &7Hotbar"
+      compass:
+        name: "&aCompass"
+        lore:
+          - "&7Drag this to the slot your"
+          - "&7compass will be set yo on spawn."
+          - ""
+          - "&cIf no slot has a compass, you"
+          - "&cwill not be given one."
+          - ""
+          - "&eClick to drag!"
+      add_favorite:
+        name: "&cEmpty Slot!"
+        lore:
+          - "&7Click to choose the slot"
+          - "&7for this category."
+          - ""
+          - "&e&l→ &eClick to select!"
+      favorites:
+        blocks:
+          name: "&aBlocks"
+          lore:
+            - "&7Blocks items will prioritize"
+            - "&7this slot!"
+            - ""
+            - "&eClick to remove!"
+        melee:
+          name: "&aMelee"
+          lore:
+            - "&7Blocks items will prioritize"
+            - "&7this slot!"
+            - ""
+            - "&eClick to remove!"
+        armor:
+          name: "&aArmor"
+          lore:
+            - "&7Blocks items will prioritize"
+            - "&7this slot!"
+            - ""
+            - "&eClick to remove!"
+        tools:
+          name: "&aTools"
+          lore:
+            - "&7Blocks items will prioritize"
+            - "&7this slot!"
+            - ""
+            - "&eClick to remove!"
+        ranged:
+          name: "&aRanged"
+          lore:
+            - "&7Blocks items will prioritize"
+            - "&7this slot!"
+            - ""
+            - "&eClick to remove!"
+        potions:
+          name: "&aPotions"
+          lore:
+            - "&7Blocks items will prioritize"
+            - "&7this slot!"
+            - ""
+            - "&eClick to remove!"
+        utility:
+          name: "&aUtility"
+          lore:
+            - "&7Blocks items will prioritize"
+            - "&7this slot!"
+            - ""
+            - "&eClick to remove!"
+        compass:
+          name: "&aCompass"
+          lore:
+            - "&7Blocks items will prioritize"
+            - "&7this slot!"
+            - ""
+            - "&eClick to remove!"
+      categories:
+        blocks:
+          name: "&aBlocks"
+          lore:
+            - "&7Drag this to a hotbar slots below"
+            - "&7to favor that slot when"
+            - "&7purchasing an item in this"
+            - "&7category or on spawn."
+            - ""
+            - "&eClick to drag!"
+        melee:
+          name: "&aMelee"
+          lore:
+            - "&7Drag this to a hotbar slots below"
+            - "&7to favor that slot when"
+            - "&7purchasing an item in this"
+            - "&7category or on spawn."
+            - ""
+            - "&eClick to drag!"
+        armor:
+          name: "&aArmor"
+          lore:
+            - "&7Drag this to a hotbar slots below"
+            - "&7to favor that slot when"
+            - "&7purchasing an item in this"
+            - "&7category or on spawn."
+            - ""
+            - "&eClick to drag!"
+        tools:
+          name: "&aTools"
+          lore:
+            - "&7Drag this to a hotbar slots below"
+            - "&7to favor that slot when"
+            - "&7purchasing an item in this"
+            - "&7category or on spawn."
+            - ""
+            - "&eClick to drag!"
+        ranged:
+          name: "&aRanged"
+          lore:
+            - "&7Drag this to a hotbar slots below"
+            - "&7to favor that slot when"
+            - "&7purchasing an item in this"
+            - "&7category or on spawn."
+            - ""
+            - "&eClick to drag!"
+        potions:
+          name: "&aPotions"
+          lore:
+            - "&7Drag this to a hotbar slots below"
+            - "&7to favor that slot when"
+            - "&7purchasing an item in this"
+            - "&7category or on spawn."
+            - ""
+            - "&eClick to drag!"
+        utility:
+          name: "&aUtility"
+          lore:
+            - "&7Drag this to a hotbar slots below"
+            - "&7to favor that slot when"
+            - "&7purchasing an item in this"
+            - "&7category or on spawn."
+            - ""
+            - "&eClick to drag!"
+  basic:
+    quick_buy:
+      category_title: Quick Buy
+      category_item_name: "&bQuick Buy"
+    blocks:
+      category_title: Blocks
+      category_item_name: "&bBlocks"
+      contents:
+        wool:
+          name: <color>Wool
+          lore:
+            - "&7Cost: &f8 Iron"
+            - ""
+            - "&7Great for bridging across"
+            - "&7islands. Turns in to your team´s"
+            - "&7color."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        hardened_clay:
+          name: <color>Hardened Clay
+          lore:
+            - "&7Cost: &f24 Iron"
+            - ""
+            - "&7Basic block to defend your bed."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        blast-proof_glass:
+          name: <color>Blast-Proof Glass
+          lore:
+            - "&7Cost: &f24 Iron"
+            - ""
+            - "&7Immune to explosions."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        end_stone:
+          name: <color>End Stone
+          lore:
+            - "&7Cost: &f24 Iron"
+            - ""
+            - "&7Solid block to defend your bed."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        ladder:
+          name: <color>Ladder
+          lore:
+            - "&7Cost: &f4 Iron"
+            - ""
+            - "&7Useful to save cats stuck in"
+            - "&7trees."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        oak_wood_planks:
+          name: <color>Oak Wood Planks
+          lore:
+            - "&7Cost: &66 Gold"
+            - ""
+            - "&7Good block to defend your bed."
+            - "&7Strong against pickaxes."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    melee:
+      category_title: Melee
+      category_item_name: "&bMelee"
+      contents:
+        stone_sword:
+          name: <color>Stone Sword
+          lore:
+            - "&7Cost: &f25 Iron"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        iron_sword:
+          name: <color>Iron Sword
+          lore:
+            - "&7Cost: &612 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        diamond_sword:
+          name: <color>Diamond Sword
+          lore:
+            - "&7Cost: &26 Emeralds"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    armor:
+      category_title: Armor
+      category_item_name: "&bArmor"
+      contents:
+        chainmail_boots:
+          name: <color>Permanent Chainmail Armor
+          lore:
+            - "&7Cost: &f120 Iron"
+            - ""
+            - "&7Chainmail leggings and boots"
+            - "&7which you will always spawn"
+            - "&7with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        iron_boots:
+          name: <color>Permanent Iron Armor
+          lore:
+            - "&7Cost: &618 Gold"
+            - ""
+            - "&7Iron leggings and boots"
+            - "&7you will always spawn with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        diamond_boots:
+          name: <color>Permanent Diamond Armor
+          lore:
+            - "&7Cost: &28 Emeralds"
+            - ""
+            - "&7Diamond leggings and boots which"
+            - "&7you will always crush with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    tools:
+      category_title: Tools
+      category_item_name: "&bTools"
+      contents:
+        shears:
+          name: <color>Permanent Shears
+          lore:
+            - "&7Cost: &f40 Iron"
+            - ""
+            - "&7Great to get rid of wool. You"
+            - "&7will always spawn with these"
+            - "&7shears."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: <color>Wooden Pickaxe (Efficiency I)
+              lore:
+                - "&7Cost: &f15 Iron"
+                - "&7Tier: &eI"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '2':
+              name: <color>Iron Pickaxe (Efficiency II)
+              lore:
+                - "&7Cost: &f20 Iron"
+                - "&7Tier: &eII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '3':
+              name: <color>Golden Pickaxe (Efficiency II, SharpnessII)
+              lore:
+                - "&7Cost: &66 Gold"
+                - "&7Tier: &eIII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '4':
+              name: <color>Diamond Pickaxe (Efficiency (III))
+              lore:
+                - "&7Cost: &612 Gold"
+                - "&7Tier: &eIV"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+        wooden_axe:
+          levels:
+            '1':
+              name: <color>Wooden Axe (Efficiency I)
+              lore:
+                - "&7Cost: &f15 Iron"
+                - "&7Tier: &eI"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '2':
+              name: <color>Iron Axe (Efficiency II)
+              lore:
+                - "&7Cost: &f20 Iron"
+                - "&7Tier: &eII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '3':
+              name: <color>Golden Axe (Efficiency III)
+              lore:
+                - "&7Cost: &66 Gold"
+                - "&7Tier: &eIII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '4':
+              name: <color>Diamond Axe (Efficiency IV)
+              lore:
+                - "&7Cost: &612 Gold"
+                - "&7Tier: &eIV"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+    ranged:
+      category_title: Ranged
+      category_item_name: "&bRanged"
+      contents:
+        arrow:
+          name: <color>Arrow
+          lore:
+            - "&7Cost: &62 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bow:
+          name: <color>Bow
+          lore:
+            - "&7Cost: &624 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bow_(power_i):
+          name: <color>Biw (Power I)
+          lore:
+            - "&7Cost: &650 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    potions:
+      category_title: Potions
+      category_item_name: "&bPotions"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: <color>Speed II Potion (45 seconds)
+          lore:
+            - "&7Cost: &22 Emerald"
+            - ""
+            - "&9Speed II (0:45)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        jump_v_potion_(45_seconds):
+          name: <color>Jump V Potion (45 seconds)
+          lore:
+            - "&7Cost: &22 Emerald"
+            - ""
+            - "&9Jump Boost V (0:45)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        invisibility_potion_(30_seconds):
+          name: <color>Invisibility Potion (30 seconds)
+          lore:
+            - "&7Cost: &24 Emerald"
+            - ""
+            - "&9Complete Invisibility (0:30)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    utility:
+      category_title: Utility
+      category_item_name: "&bUtility"
+      contents:
+        golden_apple:
+          name: <color>Golden Apple
+          lore:
+            - "&7Cost: &68 Gold"
+            - ""
+            - "&7Well-rounded healing."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        fireball:
+          item: Fireball
+          name: <color>Fireball
+          lore:
+            - "&7Cost: &f60 Iron"
+            - ""
+            - "&7Right-click to launch! Great to"
+            - "&7knock back enemies walking on"
+            - "&7thin bridges."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        tnt:
+          name: <color>TNT
+          lore:
+            - "&7Cost: &612 Gold"
+            - ""
+            - "&7Instantly ignites, appropriate"
+            - "&7to explode things!"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        ender_pearl:
+          name: <color>Ender Pearl
+          lore:
+            - "&7Cost: &26 Emeralds"
+            - ""
+            - "&7The quickest way to invade enemy"
+            - "&7bases."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        magic_milk:
+          item: Magic Milk
+          name: <color>Magic Milk
+          lore:
+            - "&7Cost: &68 Gold"
+            - ""
+            - "&7Avoid triggering traps for 30"
+            - "&7seconds after consuming."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        compact_pop-up_tower:
+          item: "&6Compact Pop Up Tower"
+          name: <color>Compact Pop-up Tower
+          lore:
+            - "&7Cost: &f50 Iron"
+            - ""
+            - "&7Place a pop-up defence."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+  default:
+    quick_buy:
+      category_title: Quick Buy
+      category_item_name: "&bQuick Buy"
+    blocks:
+      category_title: Blocks
+      category_item_name: "&bBlocks"
+      contents:
+        wool:
+          name: <color>Wool
+          lore:
+            - "&7Cost: &f4 Iron"
+            - ""
+            - "&7Great for bridging across"
+            - "&7islands. Turns in to your team´s"
+            - "&7color."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        hardened_clay:
+          name: <color>Hardened Clay
+          lore:
+            - "&7Cost: &f12 Iron"
+            - ""
+            - "&7Basic block to defend your bed."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        blast-proof_glass:
+          name: <color>Blast-Proof Glass
+          lore:
+            - "&7Cost: &f12 Iron"
+            - ""
+            - "&7Immune to explosions."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        end_stone:
+          name: <color>End Stone
+          lore:
+            - "&7Cost: &f24 Iron"
+            - ""
+            - "&7Solid block to defend your bed."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        ladder:
+          name: <color>Ladder
+          lore:
+            - "&7Cost: &f4 Iron"
+            - ""
+            - "&7Useful to save cats stuck in"
+            - "&7trees."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        oak_wood_planks:
+          name: <color>Oak Wood Planks
+          lore:
+            - "&7Cost: &64 Gold"
+            - ""
+            - "&7Good block to defend your bed."
+            - "&7Strong against pickaxes."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        obsidian:
+          name: <color>Obsidian
+          lore:
+            - "&7Cost: &24 Emeralds"
+            - ""
+            - "&7Extreme protection for your bed."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    melee:
+      category_title: Melee
+      category_item_name: "&bMelee"
+      contents:
+        stone_sword:
+          name: <color>Stone Sword
+          lore:
+            - "&7Cost: &f10 Iron"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        iron_sword:
+          name: <color>Iron Sword
+          lore:
+            - "&7Cost: &67 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        diamond_sword:
+          name: <color>Diamond Sword
+          lore:
+            - "&7Cost: &24 Emeralds"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        stick_(knockback_i):
+          name: <color>Stick (Knockback I)
+          lore:
+            - "&7Cost: &65 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    armor:
+      category_title: Armor
+      category_item_name: "&bArmor"
+      contents:
+        chainmail_boots:
+          name: <color>Permanent Chainmail Armor
+          lore:
+            - "&7Cost: &f40 Iron"
+            - ""
+            - "&7Chainmail leggings and boots"
+            - "&7which you will always spawn"
+            - "&7with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        iron_boots:
+          name: <color>Permanent Iron Armor
+          lore:
+            - "&7Cost: &612 Gold"
+            - ""
+            - "&7Iron leggings and boots"
+            - "&7you will always spawn with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        diamond_boots:
+          name: <color>Permanent Diamond Armor
+          lore:
+            - "&7Cost: &26 Emeralds"
+            - ""
+            - "&7Diamond leggings and boots which"
+            - "&7you will always crush with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    tools:
+      category_title: Tools
+      category_item_name: "&bTools"
+      contents:
+        shears:
+          name: <color>Permanent Shears
+          lore:
+            - "&7Cost: &f20 Iron"
+            - ""
+            - "&7Great to get rid of wool. You"
+            - "&7will always spawn with these"
+            - "&7shears."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: <color>Wooden Pickaxe (Efficiency I)
+              lore:
+                - "&7Cost: &f10 Iron"
+                - "&7Tier: &eI"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '2':
+              name: <color>Iron Pickaxe (Efficiency II)
+              lore:
+                - "&7Cost: &f10 Iron"
+                - "&7Tier: &eII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '3':
+              name: <color>Golden Pickaxe (Efficiency II, SharpnessII)
+              lore:
+                - "&7Cost: &63 Gold"
+                - "&7Tier: &eIII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '4':
+              name: <color>Diamond Pickaxe (Efficiency (III))
+              lore:
+                - "&7Cost: &66 Gold"
+                - "&7Tier: &eIV"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+        wooden_axe:
+          levels:
+            '1':
+              name: <color>Wooden Axe (Efficiency I)
+              lore:
+                - "&7Cost: &f10 Iron"
+                - "&7Tier: &eI"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '2':
+              name: <color>Iron Axe (Efficiency II)
+              lore:
+                - "&7Cost: &f10 Iron"
+                - "&7Tier: &eII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '3':
+              name: <color>Golden Axe (Efficiency III)
+              lore:
+                - "&7Cost: &63 Gold"
+                - "&7Tier: &eIII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '4':
+              name: <color>Diamond Axe (Efficiency IV)
+              lore:
+                - "&7Cost: &66 Gold"
+                - "&7Tier: &eIV"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+    ranged:
+      category_title: Ranged
+      category_item_name: "&bRanged"
+      contents:
+        arrow:
+          name: <color>Arrow
+          lore:
+            - "&7Cost: &62 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bow:
+          name: <color>Bow
+          lore:
+            - "&7Cost: &612 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bow_(power_i):
+          name: <color>Biw (Power I)
+          lore:
+            - "&7Cost: &624 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bow_(power_i__punch_i):
+          name: <color>Bow (Power I, Punch I)
+          lore:
+            - "&7Cost: &26 Emeralds"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    potions:
+      category_title: Potions
+      category_item_name: "&bPotions"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: <color>Speed II Potion (45 seconds)
+          lore:
+            - "&7Cost: &21 Emerald"
+            - ""
+            - "&9Speed II (0:45)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        jump_v_potion_(45_seconds):
+          name: <color>Jump V Potion (45 seconds)
+          lore:
+            - "&7Cost: &21 Emerald"
+            - ""
+            - "&9Jump Boost V (0:45)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        invisibility_potion_(30_seconds):
+          name: <color>Invisibility Potion (30 seconds)
+          lore:
+            - "&7Cost: &22 Emerald"
+            - ""
+            - "&9Complete Invisibility (0:30)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    utility:
+      category_title: Utility
+      category_item_name: "&bUtility"
+      contents:
+        golden_apple:
+          name: <color>Golden Apple
+          lore:
+            - "&7Cost: &63 Gold"
+            - ""
+            - "&7Well-rounded healing."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bedbug:
+          item: Bedbug
+          name: <color>Bedbug
+          lore:
+            - "&7Cost: &f40 Iron"
+            - ""
+            - "&7Spawns silverfish where the"
+            - "&7snowball lands to distract your"
+            - "&7enemies. Lasts 15 seconds."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        dream_defender:
+          item: Dream Defender
+          name: <color>Dream Defender
+          lore:
+            - "&7Cost: &f120 Iron"
+            - ""
+            - "&7Iron Golem to help defend your"
+            - "&7base. Lasts 4 minutes."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        fireball:
+          item: Fireball
+          name: <color>Fireball
+          lore:
+            - "&7Cost: &f40 Iron"
+            - ""
+            - "&7Right-click to launch! Great to"
+            - "&7knock back enemies walking on"
+            - "&7thin bridges."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        tnt:
+          name: <color>TNT
+          lore:
+            - "&7Cost: &64 Gold"
+            - ""
+            - "&7Instantly ignites, appropriate"
+            - "&7to explode things!"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        ender_pearl:
+          name: <color>Ender Pearl
+          lore:
+            - "&7Cost: &24 Emeralds"
+            - ""
+            - "&7The quickest way to invade enemy"
+            - "&7bases."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        water_bucket:
+          name: <color>Water Bucket
+          lore:
+            - "&7Cost: &63 Gold"
+            - ""
+            - "&7Great to slow down approaching"
+            - "&7enemies. Can also protect"
+            - "&7against TNT."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bridge_egg:
+          item: Bridge Egg
+          name: <color>Bridge Egg
+          lore:
+            - "&7Cost: &22 Emeralds"
+            - ""
+            - "&7This egg creates a bridge in its"
+            - "&7trail after being thrown."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        magic_milk:
+          item: Magic Milk
+          name: <color>Magic Milk
+          lore:
+            - "&7Cost: &64 Gold"
+            - ""
+            - "&7Avoid triggering traps for 30"
+            - "&7seconds after consuming."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        sponge:
+          name: <color>Sponge
+          lore:
+            - "&7Cost: &63 Gold"
+            - ""
+            - "&7Great for soaking up water."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        compact_pop-up_tower:
+          item: "&6Compact Pop Up Tower"
+          name: <color>Compact Pop-up Tower
+          lore:
+            - "&7Cost: &f24 Iron"
+            - ""
+            - "&7Place a pop-up defence."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+  overpowered:
+    quick_buy:
+      category_title: Quick Buy
+      category_item_name: "&bQuick Buy"
+    blocks:
+      category_title: Blocks
+      category_item_name: "&bBlocks"
+      contents:
+        wool:
+          name: <color>Wool
+          lore:
+            - "&7Cost: &f2 Iron"
+            - ""
+            - "&7Great for bridging across"
+            - "&7islands. Turns in to your team´s"
+            - "&7color."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        hardened_clay:
+          name: <color>Hardened Clay
+          lore:
+            - "&7Cost: &f8 Iron"
+            - ""
+            - "&7Basic block to defend your bed."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        blast-proof_glass:
+          name: <color>Blast-Proof Glass
+          lore:
+            - "&7Cost: &f8 Iron"
+            - ""
+            - "&7Immune to explosions."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        end_stone:
+          name: <color>End Stone
+          lore:
+            - "&7Cost: &f12 Iron"
+            - ""
+            - "&7Solid block to defend your bed."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        ladder:
+          name: <color>Ladder
+          lore:
+            - "&7Cost: &f2 Iron"
+            - ""
+            - "&7Useful to save cats stuck in"
+            - "&7trees."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        oak_wood_planks:
+          name: <color>Oak Wood Planks
+          lore:
+            - "&7Cost: &62 Gold"
+            - ""
+            - "&7Good block to defend your bed."
+            - "&7Strong against pickaxes."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        obsidian:
+          name: <color>Obsidian
+          lore:
+            - "&7Cost: &22 Emeralds"
+            - ""
+            - "&7Extreme protection for your bed."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    melee:
+      category_title: Melee
+      category_item_name: "&bMelee"
+      contents:
+        stone_sword:
+          name: <color>Stone Sword
+          lore:
+            - "&7Cost: &f5 Iron"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        iron_sword:
+          name: <color>Iron Sword
+          lore:
+            - "&7Cost: &64 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        diamond_sword:
+          name: <color>Diamond Sword
+          lore:
+            - "&7Cost: &22 Emeralds"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        stick_(knockback_i):
+          name: <color>Stick (Knockback I)
+          lore:
+            - "&7Cost: &63 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    armor:
+      category_title: Armor
+      category_item_name: "&bArmor"
+      contents:
+        chainmail_boots:
+          name: <color>Permanent Chainmail Armor
+          lore:
+            - "&7Cost: &f20 Iron"
+            - ""
+            - "&7Chainmail leggings and boots"
+            - "&7which you will always spawn"
+            - "&7with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        iron_boots:
+          name: <color>Permanent Iron Armor
+          lore:
+            - "&7Cost: &68 Gold"
+            - ""
+            - "&7Iron leggings and boots"
+            - "&7you will always spawn with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        diamond_boots:
+          name: <color>Permanent Diamond Armor
+          lore:
+            - "&7Cost: &24 Emeralds"
+            - ""
+            - "&7Diamond leggings and boots which"
+            - "&7you will always crush with."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    tools:
+      category_title: Tools
+      category_item_name: "&bTools"
+      contents:
+        shears:
+          name: <color>Permanent Shears
+          lore:
+            - "&7Cost: &f10 Iron"
+            - ""
+            - "&7Great to get rid of wool. You"
+            - "&7will always spawn with these"
+            - "&7shears."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        wooden_pickaxe:
+          levels:
+            '1':
+              name: <color>Wooden Pickaxe (Efficiency I)
+              lore:
+                - "&7Cost: &f5 Iron"
+                - "&7Tier: &eI"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '2':
+              name: <color>Iron Pickaxe (Efficiency II)
+              lore:
+                - "&7Cost: &f5 Iron"
+                - "&7Tier: &eII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '3':
+              name: <color>Golden Pickaxe (Efficiency II, SharpnessII)
+              lore:
+                - "&7Cost: &62 Gold"
+                - "&7Tier: &eIII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '4':
+              name: <color>Diamond Pickaxe (Efficiency (III))
+              lore:
+                - "&7Cost: &64 Gold"
+                - "&7Tier: &eIV"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+        wooden_axe:
+          levels:
+            '1':
+              name: <color>Wooden Axe (Efficiency I)
+              lore:
+                - "&7Cost: &f5 Iron"
+                - "&7Tier: &eI"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '2':
+              name: <color>Iron Axe (Efficiency II)
+              lore:
+                - "&7Cost: &f5 Iron"
+                - "&7Tier: &eII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '3':
+              name: <color>Golden Axe (Efficiency III)
+              lore:
+                - "&7Cost: &62 Gold"
+                - "&7Tier: &eIII"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+            '4':
+              name: <color>Diamond Axe (Efficiency IV)
+              lore:
+                - "&7Cost: &64 Gold"
+                - "&7Tier: &eIV"
+                - ""
+                - "&7This is an upgradable item."
+                - "&7It will lose 1 tier upon death!"
+                - ""
+                - "&7You will permanently respawn"
+                - "&7with at least the lowest tier."
+                - ""
+                - <favorite_status>
+                - <buy_status>
+    ranged:
+      category_title: Ranged
+      category_item_name: "&bRanged"
+      contents:
+        arrow:
+          name: <color>Arrow
+          lore:
+            - "&7Cost: &61 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bow:
+          name: <color>Bow
+          lore:
+            - "&7Cost: &66 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bow_(power_i):
+          name: <color>Biw (Power I)
+          lore:
+            - "&7Cost: &612 Gold"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bow_(power_i__punch_i):
+          name: <color>Bow (Power I, Punch I)
+          lore:
+            - "&7Cost: &24 Emeralds"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    potions:
+      category_title: Potions
+      category_item_name: "&bPotions"
+      contents:
+        speed_ii_potion_(45_seconds):
+          name: <color>Speed II Potion (45 seconds)
+          lore:
+            - "&7Cost: &21 Emerald"
+            - ""
+            - "&9Speed II (0:45)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        jump_v_potion_(45_seconds):
+          name: <color>Jump V Potion (45 seconds)
+          lore:
+            - "&7Cost: &21 Emerald"
+            - ""
+            - "&9Jump Boost V (0:45)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        invisibility_potion_(30_seconds):
+          name: <color>Invisibility Potion (30 seconds)
+          lore:
+            - "&7Cost: &21 Emerald"
+            - ""
+            - "&9Complete Invisibility (0:30)"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+    utility:
+      category_title: Utility
+      category_item_name: "&bUtility"
+      contents:
+        golden_apple:
+          name: <color>Golden Apple
+          lore:
+            - "&7Cost: &62 Gold"
+            - ""
+            - "&7Well-rounded healing."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bedbug:
+          item: Bedbug
+          name: <color>Bedbug
+          lore:
+            - "&7Cost: &f20 Iron"
+            - ""
+            - "&7Spawns silverfish where the"
+            - "&7snowball lands to distract your"
+            - "&7enemies. Lasts 15 seconds."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        dream_defender:
+          item: Dream Defender
+          name: <color>Dream Defender
+          lore:
+            - "&7Cost: &f100 Iron"
+            - ""
+            - "&7Iron Golem to help defend your"
+            - "&7base. Lasts 4 minutes."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        fireball:
+          item: Fireball
+          name: <color>Fireball
+          lore:
+            - "&7Cost: &f20 Iron"
+            - ""
+            - "&7Right-click to launch! Great to"
+            - "&7knock back enemies walking on"
+            - "&7thin bridges."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        tnt:
+          name: <color>TNT
+          lore:
+            - "&7Cost: &62 Gold"
+            - ""
+            - "&7Instantly ignites, appropriate"
+            - "&7to explode things!"
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        ender_pearl:
+          name: <color>Ender Pearl
+          lore:
+            - "&7Cost: &22 Emeralds"
+            - ""
+            - "&7The quickest way to invade enemy"
+            - "&7bases."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        water_bucket:
+          name: <color>Water Bucket
+          lore:
+            - "&7Cost: &61 Gold"
+            - ""
+            - "&7Great to slow down approaching"
+            - "&7enemies. Can also protect"
+            - "&7against TNT."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        bridge_egg:
+          item: Bridge Egg
+          name: <color>Bridge Egg
+          lore:
+            - "&7Cost: &21 Emeralds"
+            - ""
+            - "&7This egg creates a bridge in its"
+            - "&7trail after being thrown."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        magic_milk:
+          item: Magic Milk
+          name: <color>Magic Milk
+          lore:
+            - "&7Cost: &62 Gold"
+            - ""
+            - "&7Avoid triggering traps for 30"
+            - "&7seconds after consuming."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        sponge:
+          name: <color>Sponge
+          lore:
+            - "&7Cost: &61 Gold"
+            - ""
+            - "&7Great for soaking up water."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+        compact_pop-up_tower:
+          item: "&6Compact Pop Up Tower"
+          name: <color>Compact Pop-up Tower
+          lore:
+            - "&7Cost: &f12 Iron"
+            - ""
+            - "&7Place a pop-up defence."
+            - ""
+            - <favorite_status>
+            - <buy_status>
+
+time_format:
+  second: second
+  seconds: seconds
+  minute: minute
+  minutes: minutes
+  hour: hour
+  hours: hours
+  day: day
+  days: days
+  week: week
+  weeks: weeks
+
+scoreboard:
+  lobby:
+    title: "&e&lBedWars"
+    lines:
+      - ""
+      - "Level: &7<bw-level>✯"
+      - ""
+      - "Progress: &b<bw-experience>&7/&a<bw-experience_next_level>"
+      - " <bw-experience_bar>"
+      - ""
+      - "Coins: &6<bw-points>"
+      - ""
+      - "Total Kills: &a<bw-total_all_kills>"
+      - "Total Wins: &a<bw-total_wins>"
+      - ""
+      - " &emc.xiaohanbao.cn"
+  solo:
+    waiting:
+      title: "&e&lBedWars"
+      status:
+        waiting: "&cWaiting players<...>"
+        starting: Starting in &a<time> <time_format>
+      lines:
+        - "&7<date> &8<bw-server>"
+        - ""
+        - "Map: &a<bw-displayname>"
+        - "Players: &a<bw-current_players>/<bw-max_players>"
+        - ""
+        - <waiting_state>
+        - ""
+        - "Version: &a<bw-version>"
+        - "Mode: &a<bw-mode>"
+        - ""
+        - " &emc.xiaohanbao.cn"
+    game:
+      title: "&e&lBedWars"
+      format:
+        event:
+          generator: "<name> <tier> in: &a<time>"
+          bed: "Bed Destruction in: &a<time>"
+          sudden: "Sudden Death in: &a<time>"
+          end: "End Game in: &a<time>"
+          default: "Game Time: &a<time>"
+          restart: "Restarting in: &a<time>"
+        team:
+          line: "<team_color><team_initial> &f<team_name>: <team_state> <you_team>"
+          bed_destroyed: "&c<players>"
+          eliminated: "&c&l✘"
+          alive: "&a&l✓"
+          you: "&7YOU"
+      lines:
+        - "&7<date> &8<bw-server>"
+        - ""
+        - <event_format>
+        - ""
+        - <team_format>
+        - ""
+        - " &emc.xiaohanbao.cn"
+  default:
+    waiting:
+      title: "&e&lBedWars"
+      status:
+        waiting: "&cWaiting players<...>"
+        starting: Starting in &a<time> <time_format>
+      lines:
+        - "&7<date> &8<bw-server>"
+        - ""
+        - "Map: &a<bw-displayname>"
+        - "Players: &a<bw-current_players>/<bw-max_players>"
+        - ""
+        - <waiting_state>
+        - ""
+        - "Version: &a<bw-version>"
+        - "Mode: &a<bw-mode>"
+        - ""
+        - " &emc.xiaohanbao.cn"
+    game:
+      title: "&e&lBedWars"
+      format:
+        event:
+          generator: "<name> <tier> in: &a<time>"
+          bed: "Bed Destruction in: &a<time>"
+          sudden: "Sudden Death in: &a<time>"
+          end: "End Game in: &a<time>"
+          default: "Game Time: &a<time>"
+          restart: "Restarting in: &a<time>"
+        team:
+          line: "<team_color><team_initial> &f<team_name>: <team_state> <you_team>"
+          bed_destroyed: "&c<players>"
+          eliminated: "&c&l✘"
+          alive: "&a&l✓"
+          you: "&7YOU"
+      lines:
+        - "&7<date> &8<bw-server>"
+        - ""
+        - <event_format>
+        - ""
+        - <team_format>
+        - ""
+        - "Final Kills: &a<bw-game_final_kills>"
+        - "Destroyed Beds: &a<bw-game_beds>"
+        - ""
+        - " &emc.xiaohanbao.cn"
